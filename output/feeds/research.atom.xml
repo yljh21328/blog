@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/research.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:39:11+08:00</updated><entry><title>[research] Hilbert Curve</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_hilbert_curve.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_hilbert_curve.html</id><summary type="html">&lt;p&gt;令 N = 2^n&lt;/p&gt;
+&lt;p&gt;在一個 size 為 N x N 的二維空間中&lt;/p&gt;
+&lt;p&gt;Hilbert curve 會遞迴地將我們的空間切成四個相同size 的 blocks&lt;/p&gt;
+&lt;p&gt;而每一個 block 我們都會給一個 0 ~ N^2 -1 的number&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://yljh21328.github.io/blog/images/hilbert_curve.png" /&gt;&lt;/p&gt;
+&lt;p&gt;舉例來說&lt;/p&gt;
+&lt;p&gt;order n = 1 時我們可以得到一串分別是 0 ~ 3 的數字&lt;/p&gt;
+&lt;p&gt;而 order n = 2 則是由 order n = 1 演化而來&lt;/p&gt;
+&lt;p&gt;只要將order n = 1 的第一個 block 與最後一個 block 做 reflection 跟 rotation 即可得到結果&lt;/p&gt;
+&lt;p&gt;依此類推&lt;/p&gt;
+&lt;p&gt;order n = 3 是由 order n = 2 演化而來, 做的是相似的 reflection 與 rotation&lt;/p&gt;</summary></entry><entry><title>[research] The Bucket Numbering Scheme</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_the_bucket_numbering_scheme.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_the_bucket_numbering_scheme.html</id><summary type="html">&lt;p&gt;一個空間上的物件可以是任意形狀&lt;/p&gt;
+&lt;p&gt;而通常我們會取一個 bounding rectangle 來表示這個物件&lt;/p&gt;
+&lt;p&gt;而坐標可利用 Xl, Xr, Yb, Yt四個屬性來定義&lt;/p&gt;
+&lt;p&gt;在此我們用 L(Xl,Yb) 與 U(Xr,Yt) 來表示一個物件&lt;/p&gt;
+&lt;p&gt;在 Bucket Number Scheme 裡面我們將一個 Bucket 以 0 或 1 來表示&lt;/p&gt;
+&lt;p&gt;也稱作 &lt;font style="color:red;"&gt;DZ expression&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;表示的規則有兩點：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在x軸中的0表示左半部, 1表示右半步。而在y軸中0表示下半部, 1表示上半部&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;越左邊的bit 代表越前面的binary division, 越後面的bit 代表越裡面的division&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="http://yljh21328.github.io/blog/images/dz_expression.png" /&gt;&lt;/p&gt;
+&lt;p&gt;以圖中的例子&lt;/p&gt;
+&lt;p&gt;舉例來說 0010* 表示的是&lt;/p&gt;
+&lt;p&gt;00代表的是整個區塊裡面的左半部及下半部&lt;/p&gt;
+&lt;p&gt;10代表的是左半部及下半部中，右半部及下半部&lt;/p&gt;
+&lt;p&gt;以此類推。&lt;/p&gt;
+&lt;p&gt;而在此我們也會使用 Max_bucket 來記錄所有bucket 中最大的 bucket number&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://yljh21328.github.io/blog/images/peano_curve.png" /&gt;&lt;/p&gt;
+&lt;p&gt;在 Fig.6(a) 中我們將 binary form 轉成 decimal form&lt;/p&gt;
+&lt;p&gt;而在 Fig.6(b) 中我們可以依照順序劃線來得到 N-order peano curve&lt;/p&gt;</summary></entry></feed>
