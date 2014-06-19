@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Chris Yang" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content="Chris Yang | 學習筆記"/>
+    <meta property="og:url" content="http://yljh21328.github.io/blog"/>
+    <meta property="og:site_name" content="Chris Yang | 學習筆記"/>
+    <meta property="og:type" content="website"/>
+
+    <link rel="canonical" href="http://yljh21328.github.io/blog" />
+
+    <title>Chris Yang | 學習筆記</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://yljh21328.github.io/blog/theme/css/main.css" />
+    <link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chris Yang | 學習筆記 Atom Feed" />
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
+
+<body id="index">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="http://yljh21328.github.io/blog/">Chris Yang | 學習筆記 </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ><a href="http://yljh21328.github.io/blog/category/css.html">css</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/git.html">git</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/linux.html">linux</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/research.html">research</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span9">
+                <section>
+                    <ol id="posts-list" class="hfeed" start="9">
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_merge_sort.html" rel="bookmark" title="Permalink to [sort] merge sort">
+                                       [sort] merge sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>merge sort 是一個 external sort</p>
+<p>其時間複雜度為 <code>O(n logn)</code></p>
+<p>適合合併多個檔案並排序</p>
+<p>如果有兩個檔案要做排序</p>
+<p>核心概念是先分別對這倆個檔案做內部排序</p>
+<p>之後再分別用指標指著這兩個檔案</p>
+<p>依序讀入後比較</p>
+<p>並將較小的元素給存到一個新的 sequence當中</p>
+<p>而該檔案繼續讀下一個元素</p>
+<p>直到讀完為止</p>
+<p>而如果其中一個檔案先讀完</p>
+<p>則直接將另外一個檔案的內容依序讀入sequence</p>
+<p>直至兩個檔案都讀完為止</p>
+<p>如此我們就可以得到一個排序過後的sequence</p>
+<p><a href="https://github.com/yljh21328/code_example/tree/master/SORT/direct_merge_sort" target="_blank">直接merge – JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank">分割檔案後再merge – JAVA</a></p>-->
+                                <p>merge sort 是一個 external sort</p>
+<p>其時間複雜度為 <code>O(n logn)</code></p>
+<p>適合合併多個檔案並排序</p>
+<p>如果有兩個檔案要做排序</p>
+<p>核心概念是先分別對這倆個檔案做內部排序</p>
+<p>之後再分別用指標指著這兩個檔案</p>
+<p>依序讀入後比較</p>
+<p>並將較小的元素給存到一個新的 sequence當中</p>
+<p>而該檔案繼續讀下一個元素</p>
+<p>直到讀完為止</p>
+<p>而如果其中一個檔案先讀完</p>
+<p>則直接將另外一個檔案的內容依序讀入sequence</p>
+<p>直至兩個檔案都讀完為止</p>
+<p>如此我們就可以得到一個排序過後的sequence</p>
+<p><a href="https://github.com/yljh21328/code_example/tree/master/SORT/direct_merge_sort" target="_blank">直接merge – JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank">分割檔案後再merge – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_merge_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_quick_sort.html" rel="bookmark" title="Permalink to [sort] quick sort">
+                                       [sort] quick sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>quick sort 是一個內部排序法</p>
+<p>平均時間複雜度為 <code>O(n logn)</code></p>
+<p>worst case 的時間複雜度為 O(n^2)</p>
+<p>採取的是 <font stlye="color:red;">divide and conquer</font> 的模式來解決問題</p>
+<p>核心概念是先設整個序列的第一個值為K</p>
+<p>然後從左至右找到一個比K 大的元素 Ki</p>
+<p>並從右到左找到一個比K小的元素Kj</p>
+<p>找到後就彼此交換</p>
+<p>直到 i &lt; j 時</p>
+<p>此時再將 Kj 與 K 的位置交換</p>
+<p>結束這回合</p>
+<p>此時便能決定K的位置</p>
+<p>然後再利用divide and conquer 來解決左邊與右邊尚未解決的subsequence</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank">quick sort – JAVA</a></p>-->
+                                <p>quick sort 是一個內部排序法</p>
+<p>平均時間複雜度為 <code>O(n logn)</code></p>
+<p>worst case 的時間複雜度為 O(n^2)</p>
+<p>採取的是 <font stlye="color:red;">divide and conquer</font> 的模式來解決問題</p>
+<p>核心概念是先設整個序列的第一個值為K</p>
+<p>然後從左至右找到一個比K 大的元素 Ki</p>
+<p>並從右到左找到一個比K小的元素Kj</p>
+<p>找到後就彼此交換</p>
+<p>直到 i &lt; j 時</p>
+<p>此時再將 Kj 與 K 的位置交換</p>
+<p>結束這回合</p>
+<p>此時便能決定K的位置</p>
+<p>然後再利用divide and conquer 來解決左邊與右邊尚未解決的subsequence</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank">quick sort – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_quick_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" rel="bookmark" title="Permalink to [sort] radix sort">
+                                       [sort] radix sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>radix sort 是一個不需要兩兩比較元素的一種排序法</p>
+<p>其核心概念是透過分配每一個元素到適當的位置</p>
+<p>我們可以先從最低位數開始比較或從最高位數開始比較都可以</p>
+<p>假設我們從最低位數開始比較</p>
+<p>依照所比對到的元素該位數的值</p>
+<p>依序放置到相對應的位置</p>
+<p>最後整個比較完之後依序取出即可得到正確答案</p>
+<p>時間複雜度為 <code>O(n log_p  k)</code></p>
+<p>p 為資料字元數</p>
+<p>缺點是需要花費大量的額外空間來暫存資料</p>
+<p>若n 很大, 但是p 固定或很小</p>
+<p>則此演算法十分有效率</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank">radix sort – JAVA</a></p>-->
+                                <p>radix sort 是一個不需要兩兩比較元素的一種排序法</p>
+<p>其核心概念是透過分配每一個元素到適當的位置</p>
+<p>我們可以先從最低位數開始比較或從最高位數開始比較都可以</p>
+<p>假設我們從最低位數開始比較</p>
+<p>依照所比對到的元素該位數的值</p>
+<p>依序放置到相對應的位置</p>
+<p>最後整個比較完之後依序取出即可得到正確答案</p>
+<p>時間複雜度為 <code>O(n log_p  k)</code></p>
+<p>p 為資料字元數</p>
+<p>缺點是需要花費大量的額外空間來暫存資料</p>
+<p>若n 很大, 但是p 固定或很小</p>
+<p>則此演算法十分有效率</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank">radix sort – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="bookmark" title="Permalink to [sort] selection sort">
+                                       [sort] selection sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>selection sort 是一種 internal sort</p>
+<p>適合小資料或已有初步排序的資料使用</p>
+<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
+<p>如果要由小排到大</p>
+<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
+<p>並與目前的位置的元素交換</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>-->
+                                <p>selection sort 是一種 internal sort</p>
+<p>適合小資料或已有初步排序的資料使用</p>
+<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
+<p>如果要由小排到大</p>
+<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
+<p>並與目前的位置的元素交換</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="bookmark" title="Permalink to [sort] shell sort">
+                                       [sort] shell sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>shell sort 是 insertion sort 的改良版</p>
+<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
+<p>屬於internal sort, 穩定排序</p>
+<p>目的是為了減少 insertion sort 的搬移次數</p>
+<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
+<p>最簡單的做法就是設定劃分數為2</p>
+<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
+<p>而分別做完一次 insertion sort 之後</p>
+<p>再將劃分數 double, 也就是變成4</p>
+<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
+<p>依此類推</p>
+<p>直到分群結束為止</p>
+<p>而劃分的方式是採取間隔的方式來取元素</p>
+<p>舉例來說如果我們有8個元素</p>
+<p>63, 92, 27, 36, 45, 71 ...</p>-->
+                                <p>shell sort 是 insertion sort 的改良版</p>
+<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
+<p>屬於internal sort, 穩定排序</p>
+<p>目的是為了減少 insertion sort 的搬移次數</p>
+<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
+<p>最簡單的做法就是設定劃分數為2</p>
+<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
+<p>而分別做完一次 insertion sort 之後</p>
+<p>再將劃分數 double, 也就是變成4</p>
+<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
+<p>依此類推</p>
+<p>直到分群結束為止</p>
+<p>而劃分的方式是採取間隔的方式來取元素</p>
+<p>舉例來說如果我們有8個元素</p>
+<p>63, 92, 27, 36, 45, 71, 58, 7</p>
+<p>因此我們亦開始會得到 {63,45}, {92,71}, {27,58} 以及{36,7} 4 群</p>
+<p>依此類推</p>
+<p>如此我們就可以減少insertion sort 的搬移次數</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank">Array版 – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="bookmark" title="Permalink to [sublime text] 安裝 livereload">
+                                       [sublime text] 安裝 livereload
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>LiveReload 是一個好用的 plugin</p>
+<p>每次我們改完網頁之後都要按重新整理</p>
+<p>LiveReload 可以自動幫我們完成這件事情</p>
+<p>安裝 livereload 分為兩個階段</p>
+<ul>
+<li>
+<p>安裝 Sublime text plugin:</p>
+<p>使用 Package Control 來找 livereload 之後安裝即可</p>
+<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="{filename}/sublime_text/package_control.md" target="_blank">[安裝Package Control]</a></p>
+</li>
+<li>
+<p>安裝 Chrome extension:</p>
+<p>在Chrome 的擴充功能中安裝 livereload</p>
+<p>然後記得點選右上角的小圖示開啟</p>
+</li>
+</ul>-->
+                                <p>LiveReload 是一個好用的 plugin</p>
+<p>每次我們改完網頁之後都要按重新整理</p>
+<p>LiveReload 可以自動幫我們完成這件事情</p>
+<p>安裝 livereload 分為兩個階段</p>
+<ul>
+<li>
+<p>安裝 Sublime text plugin:</p>
+<p>使用 Package Control 來找 livereload 之後安裝即可</p>
+<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="{filename}/sublime_text/package_control.md" target="_blank">[安裝Package Control]</a></p>
+</li>
+<li>
+<p>安裝 Chrome extension:</p>
+<p>在Chrome 的擴充功能中安裝 livereload</p>
+<p>然後記得點選右上角的小圖示開啟</p>
+</li>
+</ul>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="bookmark" title="Permalink to [sublime text] 安裝 Package Control">
+                                       [sublime text] 安裝 Package Control
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>Package Control 是一個方便管理套件的 plugin</p>
+<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
+<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
+<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
+<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
+<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
+<p>再從官網下載解壓縮到裡面即可</p>
+<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>-->
+                                <p>Package Control 是一個方便管理套件的 plugin</p>
+<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
+<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
+<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
+<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
+<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
+<p>再從官網下載解壓縮到裡面即可</p>
+<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="bookmark" title="Permalink to [linux] ubuntu 架設 ftp (使用vsftp)">
+                                       [linux] ubuntu 架設 ftp (使用vsftp)
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<ul>
+<li>
+<p>安裝指令:</p>
+<p><code>sudo apt-get install vsftpd</code></p>
+</li>
+<li>
+<p>確認是否安裝成功:</p>
+<p><code>netstat -tul | grep ftp</code></p>
+<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
+</li>
+<li>
+<p>修改設定檔:</p>
+<p><code>sudo vim /etc/vsftpd.conf</code></p>
+<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
+<span class="nv">anonymous_enable</span><span class="o">=</span>NO
+<span class="c">#接受本地用戶</span>
+<span class="nv">local_enable</span><span class="o">=</span>YES
+<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
+<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
+<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
+<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
+<span class="nv">write_enable</span><span class="o">=</span>YES
+</pre></div>
+
+
+</li>
+<li>
+<p>修改完記得重新啟動:</p>
+<p><code>sudo /etc/init.d/vsftpd restart</code></p>
+</li>
+</ul>
+<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>-->
+                                <ul>
+<li>
+<p>安裝指令:</p>
+<p><code>sudo apt-get install vsftpd</code></p>
+</li>
+<li>
+<p>確認是否安裝成功:</p>
+<p><code>netstat -tul | grep ftp</code></p>
+<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
+</li>
+<li>
+<p>修改設定檔:</p>
+<p><code>sudo vim /etc/vsftpd.conf</code></p>
+<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
+<span class="nv">anonymous_enable</span><span class="o">=</span>NO
+<span class="c">#接受本地用戶</span>
+<span class="nv">local_enable</span><span class="o">=</span>YES
+<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
+<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
+<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
+<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
+<span class="nv">write_enable</span><span class="o">=</span>YES
+</pre></div>
+
+
+</li>
+<li>
+<p>修改完記得重新啟動:</p>
+<p><code>sudo /etc/init.d/vsftpd restart</code></p>
+</li>
+</ul>
+<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="bookmark" title="Permalink to [linux] recursively chmod">
+                                       [linux] recursively chmod
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
+<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
+</pre></div>
+
+
+<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>-->
+                                <p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
+<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
+</pre></div>
+
+
+<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="bookmark" title="Permalink to [linux] userdel: user xxx is currently logged in">
+                                       [linux] userdel: user xxx is currently logged in
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p><code>userdel xxx</code> 可以刪除使用者帳號</p>
+<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
+<p>如果遇到 user xxx is currently logged in</p>
+<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
+<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>-->
+                                <p><code>userdel xxx</code> 可以刪除使用者帳號</p>
+<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
+<p>如果遇到 user xxx is currently logged in</p>
+<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
+<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="http://yljh21328.github.io/blog/index.html">&laquo;</a>
+    Page 2 / 3
+        <a href="http://yljh21328.github.io/blog/index3.html">&raquo;</a>
+</p>
+                </section><!-- /#content -->
+</div>
+<div class="span3">
+    <section id="sidebar">
+            <div>
+                <h2>Browse content by</h2>
+                <ul class="fa-ul">
+                <li><a href="http://yljh21328.github.io/blog/categories.html"><i class="fa-li fa fa-tags"></i> Categories</a></li>
+                <li><a href="http://yljh21328.github.io/blog/archives.html"><i class="fa-li fa fa-calendar"></i> Dates</a></li>
+                <li><a href="http://yljh21328.github.io/blog/tags.html"><i class="fa-li fa fa-tag"></i> Tags</a></li>
+
+                <li><a href="http://yljh21328.github.io/blog/feeds/all.atom.xml"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+                </ul>
+            </div><!-- /.browse -->
+            <div>
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="http://getpelican.com/">Pelican</a></li>
+                    <li><a href="http://pygments.org/docs/lexers/">pygments</a></li>
+                    <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                    <li><a href="http://yljh21328.github.io">Author</a></li>
+                    <li><a href="http://luckycat.kshs.kh.edu.tw/">Luckycat</a></li>
+                    <li><a href="http://warpedvisions.org/projects/markdown-cheat-sheet.md">Markdown</a></li>
+                </ul>
+            </div><!-- /.Links -->
+            <div>
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="https://github.com/yljh21328">Github</a></li>
+                    <li><a href="https://www.facebook.com/kaining.yang.5">Facebook</a></li>
+                </ul>
+            </div><!-- /.social -->
+            <div>
+                <h2>Tags</h2>
+                <ul id="cloud">
+                </ul>
+             </div>
+<!-- /.Tags -->
+    </section><!-- /#sidebar -->
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a> and <a href="https://github.com/jsliang/pelican-fresh/graphs/contributors">contributors</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
