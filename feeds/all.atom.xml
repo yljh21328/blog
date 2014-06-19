@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:39:11+08:00</updated><entry><title>[pelican] 安裝 Pelican</title><link href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/pelican/[pelican]_pelican_install.html</id><summary type="html">&lt;p&gt;Pelican 是一個 python 寫的 static site generator&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:59:45+08:00</updated><entry><title>[pelican] 安裝 Pelican</title><link href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/pelican/[pelican]_pelican_install.html</id><summary type="html">&lt;p&gt;Pelican 是一個 python 寫的 static site generator&lt;/p&gt;
 &lt;p&gt;可以將產出的網頁放到 github page 上&lt;/p&gt;
 &lt;p&gt;安裝過程可參考 &lt;a href="http://docs.getpelican.com/en/3.3.0/getting_started.html#kickstart-your-site" target="_blank"&gt;Installing Pelican&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在此紀錄幾個重要的步驟&lt;/p&gt;
@@ -14,7 +14,7 @@
 &lt;p&gt;安裝 ghp-import &lt;code&gt;sudo pip install ghp-import&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;接著就可以下 &lt;code&gt;pelican-quickstart&lt;/code&gt; 來自動產生資料夾&lt;/p&gt;</summary></entry><entry><title>[research] Hilbert Curve</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_hilbert_curve.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_hilbert_curve.html</id><summary type="html">&lt;p&gt;令 N = 2^n&lt;/p&gt;
+&lt;p&gt;接著就可以下 &lt;code&gt;pelican-quickstart&lt;/code&gt; 來自動產生資料夾&lt;/p&gt;</summary></entry><entry><title>[research] Hilbert Curve</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_hilbert_curve.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_hilbert_curve.html</id><summary type="html">&lt;p&gt;令 N = 2^n&lt;/p&gt;
 &lt;p&gt;在一個 size 為 N x N 的二維空間中&lt;/p&gt;
 &lt;p&gt;Hilbert curve 會遞迴地將我們的空間切成四個相同size 的 blocks&lt;/p&gt;
 &lt;p&gt;而每一個 block 我們都會給一個 0 ~ N^2 -1 的number&lt;/p&gt;
@@ -24,7 +24,7 @@
 &lt;p&gt;而 order n = 2 則是由 order n = 1 演化而來&lt;/p&gt;
 &lt;p&gt;只要將order n = 1 的第一個 block 與最後一個 block 做 reflection 跟 rotation 即可得到結果&lt;/p&gt;
 &lt;p&gt;依此類推&lt;/p&gt;
-&lt;p&gt;order n = 3 是由 order n = 2 演化而來, 做的是相似的 reflection 與 rotation&lt;/p&gt;</summary></entry><entry><title>[research] The Bucket Numbering Scheme</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_the_bucket_numbering_scheme.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_the_bucket_numbering_scheme.html</id><summary type="html">&lt;p&gt;一個空間上的物件可以是任意形狀&lt;/p&gt;
+&lt;p&gt;order n = 3 是由 order n = 2 演化而來, 做的是相似的 reflection 與 rotation&lt;/p&gt;</summary></entry><entry><title>[research] The Bucket Numbering Scheme</title><link href="http://yljh21328.github.io/blog/posts/2014/06/research/[research]_the_bucket_numbering_scheme.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/research/[research]_the_bucket_numbering_scheme.html</id><summary type="html">&lt;p&gt;一個空間上的物件可以是任意形狀&lt;/p&gt;
 &lt;p&gt;而通常我們會取一個 bounding rectangle 來表示這個物件&lt;/p&gt;
 &lt;p&gt;而坐標可利用 Xl, Xr, Yb, Yt四個屬性來定義&lt;/p&gt;
 &lt;p&gt;在此我們用 L(Xl,Yb) 與 U(Xr,Yt) 來表示一個物件&lt;/p&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;而在此我們也會使用 Max_bucket 來記錄所有bucket 中最大的 bucket number&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://yljh21328.github.io/blog/images/peano_curve.png" /&gt;&lt;/p&gt;
 &lt;p&gt;在 Fig.6(a) 中我們將 binary form 轉成 decimal form&lt;/p&gt;
-&lt;p&gt;而在 Fig.6(b) 中我們可以依照順序劃線來得到 N-order peano curve&lt;/p&gt;</summary></entry><entry><title>[search] binary search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_binary_search.html</id><summary type="html">&lt;p&gt;binary search 是一種用於事先排序好的資料的搜尋演算法&lt;/p&gt;
+&lt;p&gt;而在 Fig.6(b) 中我們可以依照順序劃線來得到 N-order peano curve&lt;/p&gt;</summary></entry><entry><title>[search] binary search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_binary_search.html</id><summary type="html">&lt;p&gt;binary search 是一種用於事先排序好的資料的搜尋演算法&lt;/p&gt;
 &lt;p&gt;算是 &lt;font style="color:red;"&gt;divide and conquer&lt;/font&gt; 的變形 (少了 merge 的步驟)&lt;/p&gt;
 &lt;p&gt;核心概念於訂定三個 index : low, mid, high&lt;/p&gt;
 &lt;p&gt;如果要找的 key 大於 data[mid], 則搜尋右半邊&lt;/p&gt;
@@ -58,7 +58,7 @@
 &lt;p&gt;如果 high &amp;lt; low 則代表找尋不到&lt;/p&gt;
 &lt;p&gt;因其每次可以prune 掉一半的資料&lt;/p&gt;
 &lt;p&gt;所以其時間複雜度為 O(n log n)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank"&gt;binary search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] fibonacci search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_fibonacci_search.html</id><summary type="html">&lt;p&gt;fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank"&gt;binary search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] fibonacci search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_fibonacci_search.html</id><summary type="html">&lt;p&gt;fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋&lt;/p&gt;
 &lt;p&gt;不同的是 fibonacci 是用 &lt;font style="color:red;"&gt;fibonacci number&lt;/font&gt; 來切割&lt;/p&gt;
 &lt;p&gt;也就是說我們會先建立一個 fibonacci tree&lt;/p&gt;
 &lt;p&gt;然後再依照此 tree 來做search&lt;/p&gt;
@@ -71,17 +71,17 @@
 &lt;p&gt;而其左子樹為 (k – 1) 階Fibonacci tree&lt;/p&gt;
 &lt;p&gt;右子樹為 (k-2) 階 Fibonacci tree&lt;/p&gt;
 &lt;p&gt;依此類推可以建立完整的 Fibonacci tree&lt;/p&gt;
-&lt;p&gt;更多詳細資料可參考 – &lt;a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank"&gt;程式扎記&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] interpolation search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_interpolation_search.html</id><summary type="html">&lt;p&gt;interpolation search 為 binary search 的改良版&lt;/p&gt;
+&lt;p&gt;更多詳細資料可參考 – &lt;a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank"&gt;程式扎記&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] interpolation search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_interpolation_search.html</id><summary type="html">&lt;p&gt;interpolation search 為 binary search 的改良版&lt;/p&gt;
 &lt;p&gt;適合用在資料平均分佈的狀況下&lt;/p&gt;
 &lt;p&gt;其內插法公式為&lt;/p&gt;
 &lt;p&gt;mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)&lt;/p&gt;
 &lt;p&gt;而其餘的搜尋步驟則與 binary search 差不多&lt;/p&gt;
 &lt;p&gt;平均而言其時間複雜度優於 &lt;code&gt;O(log n)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank"&gt;interpolation search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] linear search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_linear_search.html</id><summary type="html">&lt;p&gt;linear search 是一個最簡單的搜尋方法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank"&gt;interpolation search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] linear search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_linear_search.html</id><summary type="html">&lt;p&gt;linear search 是一個最簡單的搜尋方法&lt;/p&gt;
 &lt;p&gt;又稱為 sequential search&lt;/p&gt;
 &lt;p&gt;其搜尋方式就是從頭搜到尾&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 &lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank"&gt;linear search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] bubble sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_bubble_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_bubble_sort.html</id><summary type="html">&lt;p&gt;bubble sort 是一種 internal sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank"&gt;linear search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] bubble sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_bubble_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_bubble_sort.html</id><summary type="html">&lt;p&gt;bubble sort 是一種 internal sort&lt;/p&gt;
 &lt;p&gt;適合資料量小或已經有初步排序的資料使用&lt;/p&gt;
 &lt;p&gt;其 worst case 為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果是要由小排到大&lt;/p&gt;
@@ -91,7 +91,7 @@
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank"&gt;傳統版 - JAVA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank"&gt;改良版 - JAVA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap&lt;/p&gt;
-&lt;p&gt;如果沒有則不需要額外的 scan&lt;/p&gt;</summary></entry><entry><title>[sort] heap sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_heap_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_heap_sort.html</id><summary type="html">&lt;p&gt;heap sort 使用了 heap 來幫助我們做sort 的工作&lt;/p&gt;
+&lt;p&gt;如果沒有則不需要額外的 scan&lt;/p&gt;</summary></entry><entry><title>[sort] heap sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_heap_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_heap_sort.html</id><summary type="html">&lt;p&gt;heap sort 使用了 heap 來幫助我們做sort 的工作&lt;/p&gt;
 &lt;p&gt;時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;為穩定排序法&lt;/p&gt;
 &lt;p&gt;核心概念為運用heap 的特性&lt;/p&gt;
@@ -103,7 +103,7 @@
 &lt;p&gt;我們習慣將存data 的陣列的第0個位置空出來&lt;/p&gt;
 &lt;p&gt;從第1個位置開始存&lt;/p&gt;
 &lt;p&gt;這樣才能符合 heap 的特性&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank"&gt;heap sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] insertion sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_insertion_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_insertion_sort.html</id><summary type="html">&lt;p&gt;insertion sort 是一個 internal sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank"&gt;heap sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] insertion sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_insertion_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_insertion_sort.html</id><summary type="html">&lt;p&gt;insertion sort 是一個 internal sort&lt;/p&gt;
 &lt;p&gt;其worst case 的時間複雜度為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果要由小排到大&lt;/p&gt;
 &lt;p&gt;核心概念為逐次檢查元素與其之前元素的大小&lt;/p&gt;
@@ -111,7 +111,7 @@
 &lt;p&gt;直到找到正確的位置為止&lt;/p&gt;
 &lt;p&gt;因為在 scan 的過程中會發生多次的搬移&lt;/p&gt;
 &lt;p&gt;所以如果以 linked list 來實作的話會快很多&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/insertion_sort/insertion_sort.java" target="_blank"&gt;Array版 – Java&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] merge sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_merge_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_merge_sort.html</id><summary type="html">&lt;p&gt;merge sort 是一個 external sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/insertion_sort/insertion_sort.java" target="_blank"&gt;Array版 – Java&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] merge sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_merge_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_merge_sort.html</id><summary type="html">&lt;p&gt;merge sort 是一個 external sort&lt;/p&gt;
 &lt;p&gt;其時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;適合合併多個檔案並排序&lt;/p&gt;
 &lt;p&gt;如果有兩個檔案要做排序&lt;/p&gt;
@@ -126,7 +126,7 @@
 &lt;p&gt;直至兩個檔案都讀完為止&lt;/p&gt;
 &lt;p&gt;如此我們就可以得到一個排序過後的sequence&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/direct_merge_sort" target="_blank"&gt;直接merge – JAVA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank"&gt;分割檔案後再merge – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] quick sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_quick_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_quick_sort.html</id><summary type="html">&lt;p&gt;quick sort 是一個內部排序法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank"&gt;分割檔案後再merge – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] quick sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_quick_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_quick_sort.html</id><summary type="html">&lt;p&gt;quick sort 是一個內部排序法&lt;/p&gt;
 &lt;p&gt;平均時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 O(n^2)&lt;/p&gt;
 &lt;p&gt;採取的是 &lt;font stlye="color:red;"&gt;divide and conquer&lt;/font&gt; 的模式來解決問題&lt;/p&gt;
@@ -139,7 +139,7 @@
 &lt;p&gt;結束這回合&lt;/p&gt;
 &lt;p&gt;此時便能決定K的位置&lt;/p&gt;
 &lt;p&gt;然後再利用divide and conquer 來解決左邊與右邊尚未解決的subsequence&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank"&gt;quick sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] radix sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_radix_sort.html</id><summary type="html">&lt;p&gt;radix sort 是一個不需要兩兩比較元素的一種排序法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank"&gt;quick sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] radix sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_radix_sort.html</id><summary type="html">&lt;p&gt;radix sort 是一個不需要兩兩比較元素的一種排序法&lt;/p&gt;
 &lt;p&gt;其核心概念是透過分配每一個元素到適當的位置&lt;/p&gt;
 &lt;p&gt;我們可以先從最低位數開始比較或從最高位數開始比較都可以&lt;/p&gt;
 &lt;p&gt;假設我們從最低位數開始比較&lt;/p&gt;
@@ -151,13 +151,13 @@
 &lt;p&gt;缺點是需要花費大量的額外空間來暫存資料&lt;/p&gt;
 &lt;p&gt;若n 很大, 但是p 固定或很小&lt;/p&gt;
 &lt;p&gt;則此演算法十分有效率&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank"&gt;radix sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] selection sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_selection_sort.html</id><summary type="html">&lt;p&gt;selection sort 是一種 internal sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank"&gt;radix sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] selection sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_selection_sort.html</id><summary type="html">&lt;p&gt;selection sort 是一種 internal sort&lt;/p&gt;
 &lt;p&gt;適合小資料或已有初步排序的資料使用&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果要由小排到大&lt;/p&gt;
 &lt;p&gt;其核心概念為每次 scan 時選擇一個最小的元素&lt;/p&gt;
 &lt;p&gt;並與目前的位置的元素交換&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank"&gt;程式碼 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] shell sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_shell_sort.html</id><summary type="html">&lt;p&gt;shell sort 是 insertion sort 的改良版&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank"&gt;程式碼 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] shell sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_shell_sort.html</id><summary type="html">&lt;p&gt;shell sort 是 insertion sort 的改良版&lt;/p&gt;
 &lt;p&gt;average case 的時間複雜度為 &lt;code&gt;O(n ^ 3/2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;屬於internal sort, 穩定排序&lt;/p&gt;
 &lt;p&gt;目的是為了減少 insertion sort 的搬移次數&lt;/p&gt;
@@ -175,7 +175,7 @@
 &lt;p&gt;因此我們亦開始會得到 {63,45}, {92,71}, {27,58} 以及{36,7} 4 群&lt;/p&gt;
 &lt;p&gt;依此類推&lt;/p&gt;
 &lt;p&gt;如此我們就可以減少insertion sort 的搬移次數&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank"&gt;Array版 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sublime text] 安裝 livereload</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_livereload.html</id><summary type="html">&lt;p&gt;LiveReload 是一個好用的 plugin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank"&gt;Array版 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sublime text] 安裝 livereload</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_livereload.html</id><summary type="html">&lt;p&gt;LiveReload 是一個好用的 plugin&lt;/p&gt;
 &lt;p&gt;每次我們改完網頁之後都要按重新整理&lt;/p&gt;
 &lt;p&gt;LiveReload 可以自動幫我們完成這件事情&lt;/p&gt;
 &lt;p&gt;安裝 livereload 分為兩個階段&lt;/p&gt;
@@ -190,14 +190,14 @@
 &lt;p&gt;在Chrome 的擴充功能中安裝 livereload&lt;/p&gt;
 &lt;p&gt;然後記得點選右上角的小圖示開啟&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[sublime text] 安裝 Package Control</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_package_control.html</id><summary type="html">&lt;p&gt;Package Control 是一個方便管理套件的 plugin&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>[sublime text] 安裝 Package Control</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_package_control.html</id><summary type="html">&lt;p&gt;Package Control 是一個方便管理套件的 plugin&lt;/p&gt;
 &lt;p&gt;在 Sublime text 2 裡， 往往我們都要透過 &lt;code&gt;Menu -&amp;gt; Preference -&amp;gt; Browse Packages&lt;/code&gt; 來瀏覽我們所安裝的套件&lt;/p&gt;
 &lt;p&gt;而如果透過 Package Control 就可以很快的找尋套件以及安裝&lt;/p&gt;
 &lt;p&gt;透過 &lt;code&gt;Ctrl + `&lt;/code&gt; 可以開啟 Sublime text 的 cmd&lt;/p&gt;
 &lt;p&gt;再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成&lt;/p&gt;
 &lt;p&gt;另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control&lt;/p&gt;
 &lt;p&gt;再從官網下載解壓縮到裡面即可&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] ubuntu 架設 ftp (使用vsftp)</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_ftp_(vsftp).html</id><summary type="html">&lt;ul&gt;
+&lt;p&gt;&lt;a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] ubuntu 架設 ftp (使用vsftp)</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_ftp_(vsftp).html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;安裝指令:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo apt-get install vsftpd&lt;/code&gt;&lt;/p&gt;
@@ -228,20 +228,20 @@
 &lt;p&gt;&lt;code&gt;sudo /etc/init.d/vsftpd restart&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="http://blog.udn.com/nigerchen/2261345" target="_blank"&gt;參考來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] recursively chmod</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_recursively_chmod.html</id><summary type="html">&lt;p&gt;chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.udn.com/nigerchen/2261345" target="_blank"&gt;參考來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] recursively chmod</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_recursively_chmod.html</id><summary type="html">&lt;p&gt;chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;chmod -R 777 /home/shi/Desktop/Host/lab/txp
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] userdel: user xxx is currently logged in</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html</id><summary type="html">&lt;p&gt;&lt;code&gt;userdel xxx&lt;/code&gt; 可以刪除使用者帳號&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] userdel: user xxx is currently logged in</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html</id><summary type="html">&lt;p&gt;&lt;code&gt;userdel xxx&lt;/code&gt; 可以刪除使用者帳號&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;userdel -r xxx&lt;/code&gt; 連家目錄也刪掉&lt;/p&gt;
 &lt;p&gt;如果遇到 user xxx is currently logged in&lt;/p&gt;
 &lt;p&gt;則用 &lt;code&gt;userdel -rf xxx&lt;/code&gt; 強制刪除即可&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[git] 刪除遠端的branch</title><link href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/git/[git]_delete_remote_branch.html</id><summary type="html">&lt;p&gt;要刪除本地端的 branch 非常容易&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[git] 刪除遠端的branch</title><link href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/git/[git]_delete_remote_branch.html</id><summary type="html">&lt;p&gt;要刪除本地端的 branch 非常容易&lt;/p&gt;
 &lt;p&gt;先切換到其他的branch&lt;/p&gt;
 &lt;p&gt;然後下 &lt;code&gt;git branch -d  branch-name&lt;/code&gt; 即可&lt;/p&gt;
 &lt;p&gt;然而如果要刪除遠端的branch&lt;/p&gt;
-&lt;p&gt;則必須下 &lt;code&gt;git push branch --delete branch-name&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear hashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_linear_hashing.html</id><summary type="html">&lt;p&gt;linear hashing 是一種 &lt;font style="color:red;"&gt;dynamic hashing&lt;/font&gt; 的方法&lt;/p&gt;
+&lt;p&gt;則必須下 &lt;code&gt;git push branch --delete branch-name&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear hashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_linear_hashing.html</id><summary type="html">&lt;p&gt;linear hashing 是一種 &lt;font style="color:red;"&gt;dynamic hashing&lt;/font&gt; 的方法&lt;/p&gt;
 &lt;p&gt;其儲存的欄位分為兩種 primary page, overflow page&lt;/p&gt;
 &lt;p&gt;並設N 為初始的 bucket 數&lt;/p&gt;
 &lt;p&gt;h_level (key) = key mod [N * 2 ^ N]&lt;/p&gt;
@@ -280,16 +280,16 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank"&gt;詳細教學與範例&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear probing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_linear_probing.html</id><summary type="html">&lt;p&gt;linear probing 是一種用來碰撞處理的策略&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank"&gt;詳細教學與範例&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear probing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_linear_probing.html</id><summary type="html">&lt;p&gt;linear probing 是一種用來碰撞處理的策略&lt;/p&gt;
 &lt;p&gt;如果hash 過去的欄位已有值存在&lt;/p&gt;
 &lt;p&gt;則往後尋找直到遇到第一個空的欄位為止&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank"&gt;linear probing – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] rehashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_rehashing.html</id><summary type="html">&lt;p&gt;rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank"&gt;linear probing – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] rehashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/hash/[hash]_rehashing.html</id><summary type="html">&lt;p&gt;rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow&lt;/p&gt;
 &lt;p&gt;則再改用另外一種 hash function 來hash&lt;/p&gt;
 &lt;p&gt;而在此我們使用 &lt;font style="color:red;"&gt;linked list&lt;/font&gt; 來解決 collision 與 overflow 的問題&lt;/p&gt;
 &lt;p&gt;透過不斷的往後串即可&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank"&gt;rehashing – JAVA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;而下面的範例是加上搜尋的功能&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank"&gt;rehashing with search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[css] 編號清單加大行距</title><link href="http://yljh21328.github.io/blog/posts/2014/06/css/ol_line_height.html" rel="alternate"></link><updated>2014-06-19T12:39:11+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/css/ol_line_height.html</id><summary type="html">&lt;p&gt;設定 &lt;code&gt;line-height&lt;/code&gt; 即可&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank"&gt;rehashing with search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[css] 編號清單加大行距</title><link href="http://yljh21328.github.io/blog/posts/2014/06/css/ol_line_height.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/css/ol_line_height.html</id><summary type="html">&lt;p&gt;設定 &lt;code&gt;line-height&lt;/code&gt; 即可&lt;/p&gt;
 &lt;script src="https://gist.github.com/yljh21328/f66bb72a267f651f6a25.js"&gt;&lt;/script&gt;
 
 &lt;p&gt;長得像這樣：&lt;/p&gt;
