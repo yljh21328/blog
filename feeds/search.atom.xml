@@ -14,7 +14,7 @@
 &lt;p&gt;也就是說我們會先建立一個 fibonacci tree&lt;/p&gt;
 &lt;p&gt;然後再依照此 tree 來做search&lt;/p&gt;
 &lt;p&gt;示意圖 – &lt;a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank"&gt;來源&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="{filename}/images/fibonacci_tree.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://yljh21328.github.io/blog/images/fibonacci_tree.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;fibonacci tree 的 root 是由資料個數 n 決定的&lt;/p&gt;
 &lt;p&gt;先利用 Fib(k+1) &amp;gt;= n + 1&lt;/p&gt;
 &lt;p&gt;來決定 k&lt;/p&gt;
