@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:59:45+08:00</updated><entry><title>[pelican] 安裝 Pelican</title><link href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/pelican/[pelican]_pelican_install.html</id><summary type="html">&lt;p&gt;Pelican 是一個 python 寫的 static site generator&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-24T13:15:48+08:00</updated><entry><title>[algorithm] Longest Common Subsequence</title><link href="http://yljh21328.github.io/blog/posts/2014/06/algorithm/[algorithm]_longest_common_sunsequence.html" rel="alternate"></link><updated>2014-06-24T13:15:48+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-24:posts/2014/06/algorithm/[algorithm]_longest_common_sunsequence.html</id><summary type="html">&lt;p&gt;Longest Common Subsequence (LCS) 指的是最長共同子序列&lt;/p&gt;
+&lt;p&gt;舉例來說&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s1 : 2 5 7 9 3 1 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s2 : 3 5 3 2 8&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;s1 與 s2 存在一個LCS 叫做 &lt;code&gt;5 3 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;其中存在一個利用 &lt;font style="color:red;"&gt;Dynamic Programming&lt;/font&gt; 的解法&lt;/p&gt;
+&lt;p&gt;利用二維陣列來儲存LCS的狀態&lt;/p&gt;
+&lt;p&gt;再利用 back trace 來找出答案&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/lcs/lcs.cpp" target="_blank"&gt;LCS - c++&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;參考資料：&lt;a href="http://www.csie.ntnu.edu.tw/~u91029/LongestCommonSubsequence.html" target="_blank"&gt;演算法筆記&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[pelican] 安裝 Pelican</title><link href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/pelican/[pelican]_pelican_install.html</id><summary type="html">&lt;p&gt;Pelican 是一個 python 寫的 static site generator&lt;/p&gt;
 &lt;p&gt;可以將產出的網頁放到 github page 上&lt;/p&gt;
 &lt;p&gt;安裝過程可參考 &lt;a href="http://docs.getpelican.com/en/3.3.0/getting_started.html#kickstart-your-site" target="_blank"&gt;Installing Pelican&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在此紀錄幾個重要的步驟&lt;/p&gt;
