@@ -5,14 +5,14 @@
     <meta name="author" content="Chris Yang" />
     <meta name="robots" content="index, follow"/>
 
-    <meta property="og:title" content="[sort] radix sort"/>
-    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html"/>
+    <meta property="og:title" content="[latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio"/>
+    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/06/latex/[latex]_latex_install.html"/>
     <meta property="og:site_name" content="Chris Yang | 學習筆記"/>
     <meta property="og:type" content="article"/>
 
-    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" />
+    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/06/latex/[latex]_latex_install.html" />
 
-    <title>[sort] radix sort | Chris Yang | 學習筆記</title>
+    <title>[latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio | Chris Yang | 學習筆記</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
@@ -46,12 +46,12 @@
                             <li ><a href="http://yljh21328.github.io/blog/category/css.html">css</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/git.html">git</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
-                            <li ><a href="http://yljh21328.github.io/blog/category/latex.html">latex</a></li>
+                            <li class="active"><a href="http://yljh21328.github.io/blog/category/latex.html">latex</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/linux.html">linux</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/research.html">research</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
-                            <li class="active"><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
                         </ul>
 
@@ -69,8 +69,8 @@
     <article>
       <header>
         <h1 class="entry-title">
-          <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" rel="bookmark"
-             title="Permalink to [sort] radix sort">[sort] radix sort</a></h1>
+          <a href="http://yljh21328.github.io/blog/posts/2014/06/latex/[latex]_latex_install.html" rel="bookmark"
+             title="Permalink to [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio">[latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio</a></h1>
       </header>
       <div class="entry-content">
 <footer class="post-info">
@@ -78,9 +78,9 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+    in <a href="http://yljh21328.github.io/blog/category/latex.html">latex</a>
 
-    on 2014-06-19
+    on 2014-06-27
 
 
 
@@ -88,19 +88,50 @@
     
 </footer><!-- /.post-info -->
 
-        <p>radix sort 是一個不需要兩兩比較元素的一種排序法</p>
-<p>其核心概念是透過分配每一個元素到適當的位置</p>
-<p>我們可以先從最低位數開始比較或從最高位數開始比較都可以</p>
-<p>假設我們從最低位數開始比較</p>
-<p>依照所比對到的元素該位數的值</p>
-<p>依序放置到相對應的位置</p>
-<p>最後整個比較完之後依序取出即可得到正確答案</p>
-<p>時間複雜度為 <code>O(n log_p  k)</code></p>
-<p>p 為資料字元數</p>
-<p>缺點是需要花費大量的額外空間來暫存資料</p>
-<p>若n 很大, 但是p 固定或很小</p>
-<p>則此演算法十分有效率</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank">radix sort – JAVA</a></p>
+        <p>tex 是一個專業的排版格式，通常用來寫論文</p>
+<p>而 texlive 是一個用來編譯 tex 的套件</p>
+<p>texstudio 則是一套用來寫 tex 的編輯器</p>
+<ul>
+<li>
+<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
+</li>
+<li>
+<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
+</li>
+</ul>
+<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
+<p>要先安裝 texlive 或 texstudio 都可以</p>
+<h3>安裝 texlive</h3>
+<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
+<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
+<p>大概要等上 15 ~ 20 分鐘</p>
+<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH </code></p>
+<p>PATH 會因為安裝路徑有異，要仔細注意</p>
+<p>存檔之後記得下 <code>source ~/.bashrc</code></p>
+<h3>安裝 texstudio</h3>
+<p>從官網依照自己的版本下載完之後解壓縮</p>
+<p>利用 <code>dpkg -i xxx.deb</code> 安裝即可</p>
+<p>如果有相依性的問題，則改用 <code> gdebi xxx.deb</code> 來安裝</p>
+<p>gdebi 可以用來解相依性的問題</p>
+<p>如果打開 texstudio 上邊的功能列按鈕都消失了</p>
+<p>請安裝 <code>sudo apt-get install libqt4-svg</code></p>
+<p>安裝完之後請設定 compiler 以及 viewer</p>
+<p><code>options -&gt; configure texstudio -&gt;  Build -&gt; Default Compiler -&gt; XeLaTex</code> </p>
+<p><code>options -&gt; configure texstudio -&gt;  Commands -&gt; XeLaTex</code></p>
+<p>XeLatex 編譯出來是 pdf檔，需要比較多時間，適合最後腳交給老師的時候用</p>
+<p>而用 latex 編譯出來是 dvi檔，比較快，適合撰寫的時候使用</p>
+<p>用 pdf viewer 的後不會有問題</p>
+<p>而如果是 dvi viewer，則可能會出錯</p>
+<p>lubuntu 預設是用 evince 來開 dvi檔</p>
+<p>而 evince 會抓不到 texlive 的檔案</p>
+<p>所以要再安裝 texlive-binaries</p>
+<p>可以下 <code>sudo apt-get install texlive-binaries</code></p>
+<p>如此就能成功編譯</p>
+<p>參考連結：</p>
+<ul>
+<li><a href="http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing" target="_blank">http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing</a></li>
+<li><a href="http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux" target="_blank">http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux</a></li>
+</ul>
 
       </div><!-- /.entry-content -->
 
