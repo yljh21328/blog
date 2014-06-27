@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/search.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:59:45+08:00</updated><entry><title>[search] binary search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_binary_search.html</id><summary type="html">&lt;p&gt;binary search 是一種用於事先排序好的資料的搜尋演算法&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/search.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T13:11:23+08:00</updated><entry><title>[search] binary search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_binary_search.html</id><summary type="html">&lt;p&gt;binary search 是一種用於事先排序好的資料的搜尋演算法&lt;/p&gt;
 &lt;p&gt;算是 &lt;font style="color:red;"&gt;divide and conquer&lt;/font&gt; 的變形 (少了 merge 的步驟)&lt;/p&gt;
 &lt;p&gt;核心概念於訂定三個 index : low, mid, high&lt;/p&gt;
 &lt;p&gt;如果要找的 key 大於 data[mid], 則搜尋右半邊&lt;/p&gt;
@@ -9,7 +9,7 @@
 &lt;p&gt;如果 high &amp;lt; low 則代表找尋不到&lt;/p&gt;
 &lt;p&gt;因其每次可以prune 掉一半的資料&lt;/p&gt;
 &lt;p&gt;所以其時間複雜度為 O(n log n)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank"&gt;binary search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] fibonacci search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_fibonacci_search.html</id><summary type="html">&lt;p&gt;fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank"&gt;binary search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] fibonacci search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_fibonacci_search.html</id><summary type="html">&lt;p&gt;fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋&lt;/p&gt;
 &lt;p&gt;不同的是 fibonacci 是用 &lt;font style="color:red;"&gt;fibonacci number&lt;/font&gt; 來切割&lt;/p&gt;
 &lt;p&gt;也就是說我們會先建立一個 fibonacci tree&lt;/p&gt;
 &lt;p&gt;然後再依照此 tree 來做search&lt;/p&gt;
@@ -22,13 +22,13 @@
 &lt;p&gt;而其左子樹為 (k – 1) 階Fibonacci tree&lt;/p&gt;
 &lt;p&gt;右子樹為 (k-2) 階 Fibonacci tree&lt;/p&gt;
 &lt;p&gt;依此類推可以建立完整的 Fibonacci tree&lt;/p&gt;
-&lt;p&gt;更多詳細資料可參考 – &lt;a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank"&gt;程式扎記&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] interpolation search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_interpolation_search.html</id><summary type="html">&lt;p&gt;interpolation search 為 binary search 的改良版&lt;/p&gt;
+&lt;p&gt;更多詳細資料可參考 – &lt;a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank"&gt;程式扎記&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] interpolation search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_interpolation_search.html</id><summary type="html">&lt;p&gt;interpolation search 為 binary search 的改良版&lt;/p&gt;
 &lt;p&gt;適合用在資料平均分佈的狀況下&lt;/p&gt;
 &lt;p&gt;其內插法公式為&lt;/p&gt;
 &lt;p&gt;mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)&lt;/p&gt;
 &lt;p&gt;而其餘的搜尋步驟則與 binary search 差不多&lt;/p&gt;
 &lt;p&gt;平均而言其時間複雜度優於 &lt;code&gt;O(log n)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank"&gt;interpolation search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] linear search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_linear_search.html</id><summary type="html">&lt;p&gt;linear search 是一個最簡單的搜尋方法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank"&gt;interpolation search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[search] linear search</title><link href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/search/[search]_linear_search.html</id><summary type="html">&lt;p&gt;linear search 是一個最簡單的搜尋方法&lt;/p&gt;
 &lt;p&gt;又稱為 sequential search&lt;/p&gt;
 &lt;p&gt;其搜尋方式就是從頭搜到尾&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 &lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;

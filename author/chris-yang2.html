@@ -43,7 +43,6 @@
                 <nav class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                            <li ><a href="http://yljh21328.github.io/blog/category/algorithm.html">algorithm</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/css.html">css</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/git.html">git</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
@@ -67,6 +66,319 @@
 <div class="span9">
                 <section>
                     <ol id="posts-list" class="hfeed" start="9">
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html" rel="bookmark" title="Permalink to [search] binary search">
+                                       [search] binary search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>binary search 是一種用於事先排序好的資料的搜尋演算法</p>
+<p>算是 <font style="color:red;">divide and conquer</font> 的變形 (少了 merge 的步驟)</p>
+<p>核心概念於訂定三個 index : low, mid, high</p>
+<p>如果要找的 key 大於 data[mid], 則搜尋右半邊</p>
+<p>如果小於 data[mid] 則搜尋左半邊</p>
+<p>否則回傳mid 的位置</p>
+<p>一直找下去</p>
+<p>如果 high &lt; low 則代表找尋不到</p>
+<p>因其每次可以prune 掉一半的資料</p>
+<p>所以其時間複雜度為 O(n log n)</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank">binary search – JAVA</a></p>-->
+                                <p>binary search 是一種用於事先排序好的資料的搜尋演算法</p>
+<p>算是 <font style="color:red;">divide and conquer</font> 的變形 (少了 merge 的步驟)</p>
+<p>核心概念於訂定三個 index : low, mid, high</p>
+<p>如果要找的 key 大於 data[mid], 則搜尋右半邊</p>
+<p>如果小於 data[mid] 則搜尋左半邊</p>
+<p>否則回傳mid 的位置</p>
+<p>一直找下去</p>
+<p>如果 high &lt; low 則代表找尋不到</p>
+<p>因其每次可以prune 掉一半的資料</p>
+<p>所以其時間複雜度為 O(n log n)</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank">binary search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_binary_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html" rel="bookmark" title="Permalink to [search] fibonacci search">
+                                       [search] fibonacci search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋</p>
+<p>不同的是 fibonacci 是用 <font style="color:red;">fibonacci number</font> 來切割</p>
+<p>也就是說我們會先建立一個 fibonacci tree</p>
+<p>然後再依照此 tree 來做search</p>
+<p>示意圖 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">來源</a></p>
+<p><img src="http://yljh21328.github.io/blog/images/fibonacci_tree.jpg" /></p>
+<p>fibonacci tree 的 root 是由資料個數 n 決定的</p>
+<p>先利用 Fib(k+1) &gt;= n + 1</p>
+<p>來決定 k</p>
+<p>再以Fib(k) 當作root 的值</p>
+<p>而其左子樹為 (k – 1) 階Fibonacci tree</p>
+<p>右子樹為 (k-2) 階 Fibonacci tree</p>
+<p>依此類推可以建立完整的 ...</p>-->
+                                <p>fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋</p>
+<p>不同的是 fibonacci 是用 <font style="color:red;">fibonacci number</font> 來切割</p>
+<p>也就是說我們會先建立一個 fibonacci tree</p>
+<p>然後再依照此 tree 來做search</p>
+<p>示意圖 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">來源</a></p>
+<p><img src="http://yljh21328.github.io/blog/images/fibonacci_tree.jpg" /></p>
+<p>fibonacci tree 的 root 是由資料個數 n 決定的</p>
+<p>先利用 Fib(k+1) &gt;= n + 1</p>
+<p>來決定 k</p>
+<p>再以Fib(k) 當作root 的值</p>
+<p>而其左子樹為 (k – 1) 階Fibonacci tree</p>
+<p>右子樹為 (k-2) 階 Fibonacci tree</p>
+<p>依此類推可以建立完整的 Fibonacci tree</p>
+<p>更多詳細資料可參考 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">程式扎記</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_fibonacci_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html" rel="bookmark" title="Permalink to [search] interpolation search">
+                                       [search] interpolation search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>interpolation search 為 binary search 的改良版</p>
+<p>適合用在資料平均分佈的狀況下</p>
+<p>其內插法公式為</p>
+<p>mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)</p>
+<p>而其餘的搜尋步驟則與 binary search 差不多</p>
+<p>平均而言其時間複雜度優於 <code>O(log n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank">interpolation search – JAVA</a></p>-->
+                                <p>interpolation search 為 binary search 的改良版</p>
+<p>適合用在資料平均分佈的狀況下</p>
+<p>其內插法公式為</p>
+<p>mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)</p>
+<p>而其餘的搜尋步驟則與 binary search 差不多</p>
+<p>平均而言其時間複雜度優於 <code>O(log n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank">interpolation search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_interpolation_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html" rel="bookmark" title="Permalink to [search] linear search">
+                                       [search] linear search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>linear search 是一個最簡單的搜尋方法</p>
+<p>又稱為 sequential search</p>
+<p>其搜尋方式就是從頭搜到尾</p>
+<p>worst case 的時間複雜度為 <code>O(n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank">linear search – JAVA</a></p>-->
+                                <p>linear search 是一個最簡單的搜尋方法</p>
+<p>又稱為 sequential search</p>
+<p>其搜尋方式就是從頭搜到尾</p>
+<p>worst case 的時間複雜度為 <code>O(n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank">linear search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/search/[search]_linear_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_bubble_sort.html" rel="bookmark" title="Permalink to [sort] bubble sort">
+                                       [sort] bubble sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>bubble sort 是一種 internal sort</p>
+<p>適合資料量小或已經有初步排序的資料使用</p>
+<p>其 worst case 為 <code>O(n^2)</code></p>
+<p>如果是要由小排到大</p>
+<p>核心概念是由前往後兩兩比對，若前者大於後者則交換</p>
+<p>並由較大者繼續與後面的元素兩兩比對。</p>
+<p>每scan一次能確定一個元素的最後位置</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank">傳統版 - JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank">改良版 - JAVA</a></p>
+<p>在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap</p>
+<p>如果沒有則不需要額外的 scan</p>-->
+                                <p>bubble sort 是一種 internal sort</p>
+<p>適合資料量小或已經有初步排序的資料使用</p>
+<p>其 worst case 為 <code>O(n^2)</code></p>
+<p>如果是要由小排到大</p>
+<p>核心概念是由前往後兩兩比對，若前者大於後者則交換</p>
+<p>並由較大者繼續與後面的元素兩兩比對。</p>
+<p>每scan一次能確定一個元素的最後位置</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank">傳統版 - JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank">改良版 - JAVA</a></p>
+<p>在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap</p>
+<p>如果沒有則不需要額外的 scan</p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_bubble_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_heap_sort.html" rel="bookmark" title="Permalink to [sort] heap sort">
+                                       [sort] heap sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-06-19
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>heap sort 使用了 heap 來幫助我們做sort 的工作</p>
+<p>時間複雜度為 <code>O(n logn)</code></p>
+<p>為穩定排序法</p>
+<p>核心概念為運用heap 的特性</p>
+<p>假設我們有一個 size 為 n 的 heap</p>
+<p>每次將root 與heap 的最後一個位置交換</p>
+<p>然後再執行一次 size 為 n-1 的 <font style="color:red;">heapify()</font></p>
+<p>重複此動作直至所有元素都被排序完為止</p>
+<p>在實作的部分</p>
+<p>我們習慣將存data 的陣列的第0個位置空出來</p>
+<p>從第1個位置開始存</p>
+<p>這樣才能符合 heap 的特性</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank">heap sort – JAVA</a></p>-->
+                                <p>heap sort 使用了 heap 來幫助我們做sort 的工作</p>
+<p>時間複雜度為 <code>O(n logn)</code></p>
+<p>為穩定排序法</p>
+<p>核心概念為運用heap 的特性</p>
+<p>假設我們有一個 size 為 n 的 heap</p>
+<p>每次將root 與heap 的最後一個位置交換</p>
+<p>然後再執行一次 size 為 n-1 的 <font style="color:red;">heapify()</font></p>
+<p>重複此動作直至所有元素都被排序完為止</p>
+<p>在實作的部分</p>
+<p>我們習慣將存data 的陣列的第0個位置空出來</p>
+<p>從第1個位置開始存</p>
+<p>這樣才能符合 heap 的特性</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank">heap sort – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_heap_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
                     <li>
                         <article>
                             <header>
@@ -293,370 +605,6 @@
                                 <!--
                                 <p class="readmore">
                                     <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="bookmark" title="Permalink to [sort] selection sort">
-                                       [sort] selection sort
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>selection sort 是一種 internal sort</p>
-<p>適合小資料或已有初步排序的資料使用</p>
-<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
-<p>如果要由小排到大</p>
-<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
-<p>並與目前的位置的元素交換</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>-->
-                                <p>selection sort 是一種 internal sort</p>
-<p>適合小資料或已有初步排序的資料使用</p>
-<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
-<p>如果要由小排到大</p>
-<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
-<p>並與目前的位置的元素交換</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="bookmark" title="Permalink to [sort] shell sort">
-                                       [sort] shell sort
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>shell sort 是 insertion sort 的改良版</p>
-<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
-<p>屬於internal sort, 穩定排序</p>
-<p>目的是為了減少 insertion sort 的搬移次數</p>
-<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
-<p>最簡單的做法就是設定劃分數為2</p>
-<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
-<p>而分別做完一次 insertion sort 之後</p>
-<p>再將劃分數 double, 也就是變成4</p>
-<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
-<p>依此類推</p>
-<p>直到分群結束為止</p>
-<p>而劃分的方式是採取間隔的方式來取元素</p>
-<p>舉例來說如果我們有8個元素</p>
-<p>63, 92, 27, 36, 45, 71 ...</p>-->
-                                <p>shell sort 是 insertion sort 的改良版</p>
-<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
-<p>屬於internal sort, 穩定排序</p>
-<p>目的是為了減少 insertion sort 的搬移次數</p>
-<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
-<p>最簡單的做法就是設定劃分數為2</p>
-<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
-<p>而分別做完一次 insertion sort 之後</p>
-<p>再將劃分數 double, 也就是變成4</p>
-<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
-<p>依此類推</p>
-<p>直到分群結束為止</p>
-<p>而劃分的方式是採取間隔的方式來取元素</p>
-<p>舉例來說如果我們有8個元素</p>
-<p>63, 92, 27, 36, 45, 71, 58, 7</p>
-<p>因此我們亦開始會得到 {63,45}, {92,71}, {27,58} 以及{36,7} 4 群</p>
-<p>依此類推</p>
-<p>如此我們就可以減少insertion sort 的搬移次數</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank">Array版 – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="bookmark" title="Permalink to [sublime text] 安裝 livereload">
-                                       [sublime text] 安裝 livereload
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>LiveReload 是一個好用的 plugin</p>
-<p>每次我們改完網頁之後都要按重新整理</p>
-<p>LiveReload 可以自動幫我們完成這件事情</p>
-<p>安裝 livereload 分為兩個階段</p>
-<ul>
-<li>
-<p>安裝 Sublime text plugin:</p>
-<p>使用 Package Control 來找 livereload 之後安裝即可</p>
-<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" target="_blank">[安裝Package Control]</a></p>
-</li>
-<li>
-<p>安裝 Chrome extension:</p>
-<p>在Chrome 的擴充功能中安裝 livereload</p>
-<p>然後記得點選右上角的小圖示開啟</p>
-</li>
-</ul>-->
-                                <p>LiveReload 是一個好用的 plugin</p>
-<p>每次我們改完網頁之後都要按重新整理</p>
-<p>LiveReload 可以自動幫我們完成這件事情</p>
-<p>安裝 livereload 分為兩個階段</p>
-<ul>
-<li>
-<p>安裝 Sublime text plugin:</p>
-<p>使用 Package Control 來找 livereload 之後安裝即可</p>
-<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" target="_blank">[安裝Package Control]</a></p>
-</li>
-<li>
-<p>安裝 Chrome extension:</p>
-<p>在Chrome 的擴充功能中安裝 livereload</p>
-<p>然後記得點選右上角的小圖示開啟</p>
-</li>
-</ul>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="bookmark" title="Permalink to [sublime text] 安裝 Package Control">
-                                       [sublime text] 安裝 Package Control
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>Package Control 是一個方便管理套件的 plugin</p>
-<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
-<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
-<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
-<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
-<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
-<p>再從官網下載解壓縮到裡面即可</p>
-<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>-->
-                                <p>Package Control 是一個方便管理套件的 plugin</p>
-<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
-<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
-<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
-<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
-<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
-<p>再從官網下載解壓縮到裡面即可</p>
-<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="bookmark" title="Permalink to [linux] ubuntu 架設 ftp (使用vsftp)">
-                                       [linux] ubuntu 架設 ftp (使用vsftp)
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<ul>
-<li>
-<p>安裝指令:</p>
-<p><code>sudo apt-get install vsftpd</code></p>
-</li>
-<li>
-<p>確認是否安裝成功:</p>
-<p><code>netstat -tul | grep ftp</code></p>
-<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
-</li>
-<li>
-<p>修改設定檔:</p>
-<p><code>sudo vim /etc/vsftpd.conf</code></p>
-<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
-<span class="nv">anonymous_enable</span><span class="o">=</span>NO
-<span class="c">#接受本地用戶</span>
-<span class="nv">local_enable</span><span class="o">=</span>YES
-<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
-<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
-<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
-<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
-<span class="nv">write_enable</span><span class="o">=</span>YES
-</pre></div>
-
-
-</li>
-<li>
-<p>修改完記得重新啟動:</p>
-<p><code>sudo /etc/init.d/vsftpd restart</code></p>
-</li>
-</ul>
-<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>-->
-                                <ul>
-<li>
-<p>安裝指令:</p>
-<p><code>sudo apt-get install vsftpd</code></p>
-</li>
-<li>
-<p>確認是否安裝成功:</p>
-<p><code>netstat -tul | grep ftp</code></p>
-<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
-</li>
-<li>
-<p>修改設定檔:</p>
-<p><code>sudo vim /etc/vsftpd.conf</code></p>
-<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
-<span class="nv">anonymous_enable</span><span class="o">=</span>NO
-<span class="c">#接受本地用戶</span>
-<span class="nv">local_enable</span><span class="o">=</span>YES
-<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
-<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
-<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
-<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
-<span class="nv">write_enable</span><span class="o">=</span>YES
-</pre></div>
-
-
-</li>
-<li>
-<p>修改完記得重新啟動:</p>
-<p><code>sudo /etc/init.d/vsftpd restart</code></p>
-</li>
-</ul>
-<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="bookmark" title="Permalink to [linux] recursively chmod">
-                                       [linux] recursively chmod
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
-<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
-</pre></div>
-
-
-<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>-->
-                                <p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
-<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
-</pre></div>
-
-
-<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->

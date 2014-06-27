@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/sublime-text.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T12:59:45+08:00</updated><entry><title>[sublime text] 安裝 livereload</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_livereload.html</id><summary type="html">&lt;p&gt;LiveReload 是一個好用的 plugin&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/sublime-text.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T13:11:23+08:00</updated><entry><title>[sublime text] 安裝 livereload</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_livereload.html</id><summary type="html">&lt;p&gt;LiveReload 是一個好用的 plugin&lt;/p&gt;
 &lt;p&gt;每次我們改完網頁之後都要按重新整理&lt;/p&gt;
 &lt;p&gt;LiveReload 可以自動幫我們完成這件事情&lt;/p&gt;
 &lt;p&gt;安裝 livereload 分為兩個階段&lt;/p&gt;
@@ -14,7 +14,7 @@
 &lt;p&gt;在Chrome 的擴充功能中安裝 livereload&lt;/p&gt;
 &lt;p&gt;然後記得點選右上角的小圖示開啟&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[sublime text] 安裝 Package Control</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="alternate"></link><updated>2014-06-19T12:59:45+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_package_control.html</id><summary type="html">&lt;p&gt;Package Control 是一個方便管理套件的 plugin&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>[sublime text] 安裝 Package Control</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sublime-text/[sublime_text]_install_package_control.html</id><summary type="html">&lt;p&gt;Package Control 是一個方便管理套件的 plugin&lt;/p&gt;
 &lt;p&gt;在 Sublime text 2 裡， 往往我們都要透過 &lt;code&gt;Menu -&amp;gt; Preference -&amp;gt; Browse Packages&lt;/code&gt; 來瀏覽我們所安裝的套件&lt;/p&gt;
 &lt;p&gt;而如果透過 Package Control 就可以很快的找尋套件以及安裝&lt;/p&gt;
 &lt;p&gt;透過 &lt;code&gt;Ctrl + `&lt;/code&gt; 可以開啟 Sublime text 的 cmd&lt;/p&gt;

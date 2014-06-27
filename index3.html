@@ -43,7 +43,6 @@
                 <nav class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                            <li ><a href="http://yljh21328.github.io/blog/category/algorithm.html">algorithm</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/css.html">css</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/git.html">git</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
@@ -71,8 +70,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="bookmark" title="Permalink to [linux] userdel: user xxx is currently logged in">
-                                       [linux] userdel: user xxx is currently logged in
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="bookmark" title="Permalink to [sort] selection sort">
+                                       [sort] selection sort
                                     </a>
                                 </h1>
                             </header>
@@ -82,7 +81,7 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
 
     on 2014-06-19
 
@@ -90,19 +89,23 @@
 
 
     
-</footer><!-- /.post-info -->                                <!--<p><code>userdel xxx</code> 可以刪除使用者帳號</p>
-<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
-<p>如果遇到 user xxx is currently logged in</p>
-<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
-<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>-->
-                                <p><code>userdel xxx</code> 可以刪除使用者帳號</p>
-<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
-<p>如果遇到 user xxx is currently logged in</p>
-<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
-<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>
+</footer><!-- /.post-info -->                                <!--<p>selection sort 是一種 internal sort</p>
+<p>適合小資料或已有初步排序的資料使用</p>
+<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
+<p>如果要由小排到大</p>
+<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
+<p>並與目前的位置的元素交換</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>-->
+                                <p>selection sort 是一種 internal sort</p>
+<p>適合小資料或已有初步排序的資料使用</p>
+<p>worst case 的時間複雜度為 <code>O(n^2)</code></p>
+<p>如果要由小排到大</p>
+<p>其核心概念為每次 scan 時選擇一個最小的元素</p>
+<p>並與目前的位置的元素交換</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank">程式碼 – JAVA</a></p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
@@ -113,8 +116,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html" rel="bookmark" title="Permalink to [git] 刪除遠端的branch">
-                                       [git] 刪除遠端的branch
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="bookmark" title="Permalink to [sort] shell sort">
+                                       [sort] shell sort
                                     </a>
                                 </h1>
                             </header>
@@ -124,7 +127,7 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/git.html">git</a>
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
 
     on 2014-06-19
 
@@ -132,19 +135,43 @@
 
 
     
-</footer><!-- /.post-info -->                                <!--<p>要刪除本地端的 branch 非常容易</p>
-<p>先切換到其他的branch</p>
-<p>然後下 <code>git branch -d  branch-name</code> 即可</p>
-<p>然而如果要刪除遠端的branch</p>
-<p>則必須下 <code>git push branch --delete branch-name</code></p>-->
-                                <p>要刪除本地端的 branch 非常容易</p>
-<p>先切換到其他的branch</p>
-<p>然後下 <code>git branch -d  branch-name</code> 即可</p>
-<p>然而如果要刪除遠端的branch</p>
-<p>則必須下 <code>git push branch --delete branch-name</code></p>
+</footer><!-- /.post-info -->                                <!--<p>shell sort 是 insertion sort 的改良版</p>
+<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
+<p>屬於internal sort, 穩定排序</p>
+<p>目的是為了減少 insertion sort 的搬移次數</p>
+<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
+<p>最簡單的做法就是設定劃分數為2</p>
+<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
+<p>而分別做完一次 insertion sort 之後</p>
+<p>再將劃分數 double, 也就是變成4</p>
+<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
+<p>依此類推</p>
+<p>直到分群結束為止</p>
+<p>而劃分的方式是採取間隔的方式來取元素</p>
+<p>舉例來說如果我們有8個元素</p>
+<p>63, 92, 27, 36, 45, 71 ...</p>-->
+                                <p>shell sort 是 insertion sort 的改良版</p>
+<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
+<p>屬於internal sort, 穩定排序</p>
+<p>目的是為了減少 insertion sort 的搬移次數</p>
+<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
+<p>最簡單的做法就是設定劃分數為2</p>
+<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
+<p>而分別做完一次 insertion sort 之後</p>
+<p>再將劃分數 double, 也就是變成4</p>
+<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
+<p>依此類推</p>
+<p>直到分群結束為止</p>
+<p>而劃分的方式是採取間隔的方式來取元素</p>
+<p>舉例來說如果我們有8個元素</p>
+<p>63, 92, 27, 36, 45, 71, 58, 7</p>
+<p>因此我們亦開始會得到 {63,45}, {92,71}, {27,58} 以及{36,7} 4 群</p>
+<p>依此類推</p>
+<p>如此我們就可以減少insertion sort 的搬移次數</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank">Array版 – JAVA</a></p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
@@ -155,8 +182,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html" rel="bookmark" title="Permalink to [hash] linear hashing">
-                                       [hash] linear hashing
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html" rel="bookmark" title="Permalink to [sublime text] 安裝 livereload">
+                                       [sublime text] 安裝 livereload
                                     </a>
                                 </h1>
                             </header>
@@ -166,7 +193,7 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
+    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
 
     on 2014-06-19
 
@@ -174,58 +201,41 @@
 
 
     
-</footer><!-- /.post-info -->                                <!--<p>linear hashing 是一種 <font style="color:red;">dynamic hashing</font> 的方法</p>
-<p>其儲存的欄位分為兩種 primary page, overflow page</p>
-<p>並設N 為初始的 bucket 數</p>
-<p>h_level (key) = key mod [N * 2 ^ N]</p>
-<p>並存在一個 point Next 指向下一個要分割的 bucket</p>
-<p>而 linear hashing 存在一個 utilization 的機制</p>
-<p>超過 utilization 時則 split bucket</p>
-<p>其演算法如下</p>
-<div class="highlight"><pre><span class="err">給定</span> <span class="nx">N</span> <span class="err">為初始的</span> <span class="nx">bucket</span> <span class="err">數</span><span class="p">,</span> <span class="nx">point</span> <span class="nx">Next</span> <span class="err">指向第</span><span class="mi">0</span> <span class="err">個</span> <span class="nx">bucket ...</span></pre></div>-->
-                                <p>linear hashing 是一種 <font style="color:red;">dynamic hashing</font> 的方法</p>
-<p>其儲存的欄位分為兩種 primary page, overflow page</p>
-<p>並設N 為初始的 bucket 數</p>
-<p>h_level (key) = key mod [N * 2 ^ N]</p>
-<p>並存在一個 point Next 指向下一個要分割的 bucket</p>
-<p>而 linear hashing 存在一個 utilization 的機制</p>
-<p>超過 utilization 時則 split bucket</p>
-<p>其演算法如下</p>
-<div class="highlight"><pre><span class="err">給定</span> <span class="nx">N</span> <span class="err">為初始的</span> <span class="nx">bucket</span> <span class="err">數</span><span class="p">,</span> <span class="nx">point</span> <span class="nx">Next</span> <span class="err">指向第</span><span class="mi">0</span> <span class="err">個</span> <span class="nx">bucket</span>
-
-<span class="nx">utilization</span> <span class="nx">is</span> <span class="nx">between</span> <span class="mi">40</span><span class="o">%</span> <span class="nx">and</span> <span class="mi">80</span><span class="o">%</span>
-
-<span class="nx">level</span> <span class="err">為</span> <span class="mi">0</span>
-
-<span class="mi">1</span><span class="p">.</span> <span class="err">透過</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來將</span> <span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
-
-<span class="mi">2</span><span class="p">.</span> <span class="err">檢查</span> <span class="nx">utilization</span> <span class="err">是否超過</span> <span class="mi">80</span><span class="o">%</span><span class="p">,</span> <span class="err">如果超過則</span> <span class="nx">split</span> <span class="nx">next</span> <span class="err">指到的</span> <span class="nx">bucket</span>
-
-<span class="mi">3</span><span class="p">.</span> <span class="err">重複步驟</span><span class="mi">2</span> <span class="err">直到</span> <span class="nx">utilization</span> <span class="err">降到</span> <span class="mi">80</span><span class="o">%</span> <span class="err">以下</span>
-
-<span class="err">如此可成功地將所有的</span><span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
-</pre></div>
-
-
-<p>而split 的細節是</p>
-<div class="highlight"><pre><span class="err">將</span><span class="nx">bucket</span> <span class="err">中的值去</span> <span class="nx">mod</span> <span class="mi">2</span> <span class="err">的倍數</span>
-
-<span class="err">如果無法分開</span><span class="p">,</span> <span class="err">則挑選大一點的</span> <span class="mi">2</span><span class="err">的倍數</span>
-
-<span class="nx">split</span> <span class="err">結束之後將</span> <span class="nx">next</span> <span class="err">指向下一個</span><span class="nx">bucket</span>
-
-<span class="err">如果下一個</span> <span class="nx">bucket</span> <span class="o">&gt;=</span> <span class="nx">N</span>
-
-<span class="err">則將</span> <span class="nx">next</span> <span class="err">歸</span><span class="mi">0</span><span class="p">,</span> <span class="err">而</span> <span class="nx">level</span> <span class="o">+</span><span class="mi">1</span>
-
-<span class="err">要再</span><span class="nx">insert</span> <span class="err">新的</span> <span class="nx">number</span> <span class="err">時則使用新的</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來</span> <span class="nx">hash</span>
-</pre></div>
-
-
-<p><a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank">詳細教學與範例</a></p>
+</footer><!-- /.post-info -->                                <!--<p>LiveReload 是一個好用的 plugin</p>
+<p>每次我們改完網頁之後都要按重新整理</p>
+<p>LiveReload 可以自動幫我們完成這件事情</p>
+<p>安裝 livereload 分為兩個階段</p>
+<ul>
+<li>
+<p>安裝 Sublime text plugin:</p>
+<p>使用 Package Control 來找 livereload 之後安裝即可</p>
+<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" target="_blank">[安裝Package Control]</a></p>
+</li>
+<li>
+<p>安裝 Chrome extension:</p>
+<p>在Chrome 的擴充功能中安裝 livereload</p>
+<p>然後記得點選右上角的小圖示開啟</p>
+</li>
+</ul>-->
+                                <p>LiveReload 是一個好用的 plugin</p>
+<p>每次我們改完網頁之後都要按重新整理</p>
+<p>LiveReload 可以自動幫我們完成這件事情</p>
+<p>安裝 livereload 分為兩個階段</p>
+<ul>
+<li>
+<p>安裝 Sublime text plugin:</p>
+<p>使用 Package Control 來找 livereload 之後安裝即可</p>
+<p>裝完之後記得重開，沒安裝 Package Control 的人請先參考這篇 -&gt; <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" target="_blank">[安裝Package Control]</a></p>
+</li>
+<li>
+<p>安裝 Chrome extension:</p>
+<p>在Chrome 的擴充功能中安裝 livereload</p>
+<p>然後記得點選右上角的小圖示開啟</p>
+</li>
+</ul>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_livereload.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
@@ -236,8 +246,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html" rel="bookmark" title="Permalink to [hash] linear probing">
-                                       [hash] linear probing
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html" rel="bookmark" title="Permalink to [sublime text] 安裝 Package Control">
+                                       [sublime text] 安裝 Package Control
                                     </a>
                                 </h1>
                             </header>
@@ -247,7 +257,7 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
+    in <a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a>
 
     on 2014-06-19
 
@@ -255,63 +265,25 @@
 
 
     
-</footer><!-- /.post-info -->                                <!--<p>linear probing 是一種用來碰撞處理的策略</p>
-<p>如果hash 過去的欄位已有值存在</p>
-<p>則往後尋找直到遇到第一個空的欄位為止</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank">linear probing – JAVA</a></p>-->
-                                <p>linear probing 是一種用來碰撞處理的策略</p>
-<p>如果hash 過去的欄位已有值存在</p>
-<p>則往後尋找直到遇到第一個空的欄位為止</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank">linear probing – JAVA</a></p>
+</footer><!-- /.post-info -->                                <!--<p>Package Control 是一個方便管理套件的 plugin</p>
+<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
+<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
+<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
+<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
+<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
+<p>再從官網下載解壓縮到裡面即可</p>
+<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>-->
+                                <p>Package Control 是一個方便管理套件的 plugin</p>
+<p>在 Sublime text 2 裡， 往往我們都要透過 <code>Menu -&gt; Preference -&gt; Browse Packages</code> 來瀏覽我們所安裝的套件</p>
+<p>而如果透過 Package Control 就可以很快的找尋套件以及安裝</p>
+<p>透過 <code>Ctrl + `</code> 可以開啟 Sublime text 的 cmd</p>
+<p>再透過執行 Package Control 官網所提供的 script 後重開Sublime text 即可完成</p>
+<p>另外一個方法是在 Packages 的資料夾中自創資料夾 Package Control</p>
+<p>再從官網下載解壓縮到裡面即可</p>
+<p><a href="http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part3-package-control.html#.U5fcxd_FsUQ" target="_blank">資料來源</a></p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html" rel="bookmark" title="Permalink to [hash] rehashing">
-                                       [hash] rehashing
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>-->
-                                <p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/sublime-text/[sublime_text]_install_package_control.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
