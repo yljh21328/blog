@@ -71,8 +71,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_lubuntu_install.html" rel="bookmark" title="Permalink to [linux] 安裝 lubuntu 13.10">
-                                       [linux] 安裝 lubuntu 13.10
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_apt_mirror_site.html" rel="bookmark" title="Permalink to [linux] 修改 apt 的 mirror site">
+                                       [linux] 修改 apt 的 mirror site
                                     </a>
                                 </h1>
                             </header>
@@ -84,96 +84,59 @@
 
     in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-06-27
+    on 2014-07-11
 
 
 
 
     
-</footer><!-- /.post-info -->                                <!--<p>在這邊我安裝的是 lubuntu 13.10 64bit</p>
-<ul>
-<li><a href="http://cdimage.ubuntu.com/lubuntu/releases/13.10/release/lubuntu-13.10-desktop-amd64.iso" target="_blank">lubuntu 13.10 64-bit 載點</a></li>
-</ul>
-<p>有幾個需要注意的地方</p>
-<p>首先先將 lubuntu 的光碟放進光碟機</p>
-<p>然後再開機時選擇用光碟機開機</p>
-<p>進去之後請選擇用 <code>中文</code> 的方式安裝</p>
-<p>如果你安裝的是英文語系的話，那麼到時候你的中文支援會非常的不完整</p>
-<p>但是如果你安裝時是用中文安裝的話，到時候安裝的加目錄可以切換回英文的目錄</p>
-<p>在磁碟分割的時候可以選擇一個空的區域(我是切100G)，格式化成 <code>ext4</code></p>
-<p>並掛載給根目錄 <code>/</code> 即可</p>
-<p><code>swap</code>的話就看自己要不要切了，現在的記憶體空間應該都是夠用</p>
-<p><code>記得如果要裝雙系統的話要先裝 windows 再裝 ubuntu，不然開機選單會讀不到</code></p>
-<p>安裝完之後有幾件事情要注意一下</p>
+</footer><!-- /.post-info -->                                <!--<p>安裝 ubuntu 預設的更新源是 <code>tw.archive.ubuntu.com</code></p>
+<p>這個source 又慢又不穩定</p>
+<p>利用以下的步驟就可以幫 ubuntu 換一個最佳的更新源</p>
 <ul>
 <li>
-<p>將中文目錄改回英文名稱</p>
-<p>1.echo $LANG</p>
-<p>2.export LANG=en_US</p>
-<p>3.xdg-user-dirs-gtk-update</p>
-<p>4.將第一步驟得到的 $LANG ...</p></li></ul>-->
-                                <p>在這邊我安裝的是 lubuntu 13.10 64bit</p>
-<ul>
-<li><a href="http://cdimage.ubuntu.com/lubuntu/releases/13.10/release/lubuntu-13.10-desktop-amd64.iso" target="_blank">lubuntu 13.10 64-bit 載點</a></li>
-</ul>
-<p>有幾個需要注意的地方</p>
-<p>首先先將 lubuntu 的光碟放進光碟機</p>
-<p>然後再開機時選擇用光碟機開機</p>
-<p>進去之後請選擇用 <code>中文</code> 的方式安裝</p>
-<p>如果你安裝的是英文語系的話，那麼到時候你的中文支援會非常的不完整</p>
-<p>但是如果你安裝時是用中文安裝的話，到時候安裝的加目錄可以切換回英文的目錄</p>
-<p>在磁碟分割的時候可以選擇一個空的區域(我是切100G)，格式化成 <code>ext4</code></p>
-<p>並掛載給根目錄 <code>/</code> 即可</p>
-<p><code>swap</code>的話就看自己要不要切了，現在的記憶體空間應該都是夠用</p>
-<p><code>記得如果要裝雙系統的話要先裝 windows 再裝 ubuntu，不然開機選單會讀不到</code></p>
-<p>安裝完之後有幾件事情要注意一下</p>
-<ul>
-<li>
-<p>將中文目錄改回英文名稱</p>
-<p>1.echo $LANG</p>
-<p>2.export LANG=en_US</p>
-<p>3.xdg-user-dirs-gtk-update</p>
-<p>4.將第一步驟得到的 $LANG 給 export 回去</p>
-<p>參考來源: <a href="http://freedom-heero.blogspot.tw/2012/11/ubuntu.html" target="_blank">蒼天之劍</a></p>
+<p>cp /etc/apt/sources.list /etc/apt/sources.list.backup</p>
 </li>
 <li>
-<p>連接網路</p>
+<p>sudo /usr/bin/software-properties-gtk</p>
 </li>
 <li>
-<p>更新語言支援 language support</p>
+<p>Tab 選 "Ubuntu軟體"</p>
 </li>
 <li>
-<p>更新系統： </p>
+<p>下載自選擇 ""其它"</p>
+</li>
+<li>
+<p>然後跑 "選擇最佳的伺服器"</p>
+</li>
+</ul>
+<p>跑完就有最佳的更新源了</p>
+<p>參考來源：<a href="http://blog.longwin.com.tw/2011/02/ubuntu-mirror-site-repository-2011/">Ubuntu Linux 挑選最佳的 Mirror Site (APT Repository) </a></p>-->
+                                <p>安裝 ubuntu 預設的更新源是 <code>tw.archive.ubuntu.com</code></p>
+<p>這個source 又慢又不穩定</p>
+<p>利用以下的步驟就可以幫 ubuntu 換一個最佳的更新源</p>
 <ul>
-<li>先下 <code>sudo apt-get update</code> 更新軟體源再下 <code>sudo apt-get upgrade</code> 更新套件</li>
-</ul>
+<li>
+<p>cp /etc/apt/sources.list /etc/apt/sources.list.backup</p>
 </li>
 <li>
-<p>安裝常用軟體：</p>
-<ul>
-<li>filezilla <code>sudo apt-get install filezilla</code></li>
-<li>aptitude <code>sudo apt-get install aptitude</code></li>
-<li>lamp sudo <code>apt-get install lamp-server^</code></li>
-<li>phpmyadmin <code><a href="http://www.phpmyadmin.net/home_page/index.php" target="_blank">phpmyadmin 官網</a></code></li>
-<li>vim sudo <code>apt-get intsll vim</code></li>
-<li>ssh sudo <code>apt-get install openssh-server</code></li>
-<li>git sudo <code>apt-get install git</code></li>
-</ul>
+<p>sudo /usr/bin/software-properties-gtk</p>
 </li>
 <li>
-<p>更新設定檔</p>
-<ul>
-<li>.bashrc</li>
-<li>.vimrc</li>
-<li>.vim</li>
-<li>.gitignore</li>
-<li>.ssh</li>
-</ul>
+<p>Tab 選 "Ubuntu軟體"</p>
+</li>
+<li>
+<p>下載自選擇 ""其它"</p>
+</li>
+<li>
+<p>然後跑 "選擇最佳的伺服器"</p>
 </li>
 </ul>
+<p>跑完就有最佳的更新源了</p>
+<p>參考來源：<a href="http://blog.longwin.com.tw/2011/02/ubuntu-mirror-site-repository-2011/">Ubuntu Linux 挑選最佳的 Mirror Site (APT Repository) </a></p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_lubuntu_install.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_apt_mirror_site.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
@@ -184,492 +147,7 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/latex/[latex]_latex_install.html" rel="bookmark" title="Permalink to [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio">
-                                       [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/latex.html">latex</a>
-
-    on 2014-06-27
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>tex 是一個專業的排版格式，通常用來寫論文</p>
-<p>而 texlive 是一個用來編譯 tex 的套件</p>
-<p>texstudio 則是一套用來寫 tex 的編輯器</p>
-<ul>
-<li>
-<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
-</li>
-<li>
-<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
-</li>
-</ul>
-<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
-<p>要先安裝 texlive 或 texstudio 都可以</p>
-<h3>安裝 texlive</h3>
-<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
-<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
-<p>大概要等上 15 ~ 20 分鐘</p>
-<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux ...</code></p>-->
-                                <p>tex 是一個專業的排版格式，通常用來寫論文</p>
-<p>而 texlive 是一個用來編譯 tex 的套件</p>
-<p>texstudio 則是一套用來寫 tex 的編輯器</p>
-<ul>
-<li>
-<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
-</li>
-<li>
-<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
-</li>
-</ul>
-<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
-<p>要先安裝 texlive 或 texstudio 都可以</p>
-<h3>安裝 texlive</h3>
-<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
-<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
-<p>大概要等上 15 ~ 20 分鐘</p>
-<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH </code></p>
-<p>PATH 會因為安裝路徑有異，要仔細注意</p>
-<p>存檔之後記得下 <code>source ~/.bashrc</code></p>
-<h3>安裝 texstudio</h3>
-<p>從官網依照自己的版本下載完之後解壓縮</p>
-<p>利用 <code>dpkg -i xxx.deb</code> 安裝即可</p>
-<p>如果有相依性的問題，則改用 <code> gdebi xxx.deb</code> 來安裝</p>
-<p>gdebi 可以用來解相依性的問題</p>
-<p>如果打開 texstudio 上邊的功能列按鈕都消失了</p>
-<p>請安裝 <code>sudo apt-get install libqt4-svg</code></p>
-<p>安裝完之後請設定 compiler 以及 viewer</p>
-<p><code>options -&gt; configure texstudio -&gt;  Build -&gt; Default Compiler -&gt; XeLaTex</code> </p>
-<p><code>options -&gt; configure texstudio -&gt;  Commands -&gt; XeLaTex</code></p>
-<p>XeLatex 編譯出來是 pdf檔，需要比較多時間，適合最後腳交給老師的時候用</p>
-<p>而用 latex 編譯出來是 dvi檔，比較快，適合撰寫的時候使用</p>
-<p>用 pdf viewer 的後不會有問題</p>
-<p>而如果是 dvi viewer，則可能會出錯</p>
-<p>lubuntu 預設是用 evince 來開 dvi檔</p>
-<p>而 evince 會抓不到 texlive 的檔案</p>
-<p>所以要再安裝 texlive-binaries</p>
-<p>可以下 <code>sudo apt-get install texlive-binaries</code></p>
-<p>如此就能成功編譯</p>
-<p>參考連結：</p>
-<ul>
-<li><a href="http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing" target="_blank">http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing</a></li>
-<li><a href="http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux" target="_blank">http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux</a></li>
-</ul>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/latex/[latex]_latex_install.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html" rel="bookmark" title="Permalink to [git] 刪除遠端的branch">
-                                       [git] 刪除遠端的branch
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/git.html">git</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>要刪除本地端的 branch 非常容易</p>
-<p>先切換到其他的branch</p>
-<p>然後下 <code>git branch -d  branch-name</code> 即可</p>
-<p>然而如果要刪除遠端的branch</p>
-<p>則必須下 <code>git push branch --delete branch-name</code></p>-->
-                                <p>要刪除本地端的 branch 非常容易</p>
-<p>先切換到其他的branch</p>
-<p>然後下 <code>git branch -d  branch-name</code> 即可</p>
-<p>然而如果要刪除遠端的branch</p>
-<p>則必須下 <code>git push branch --delete branch-name</code></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/git/[git]_delete_remote_branch.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html" rel="bookmark" title="Permalink to [hash] linear hashing">
-                                       [hash] linear hashing
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>linear hashing 是一種 <font style="color:red;">dynamic hashing</font> 的方法</p>
-<p>其儲存的欄位分為兩種 primary page, overflow page</p>
-<p>並設N 為初始的 bucket 數</p>
-<p>h_level (key) = key mod [N * 2 ^ N]</p>
-<p>並存在一個 point Next 指向下一個要分割的 bucket</p>
-<p>而 linear hashing 存在一個 utilization 的機制</p>
-<p>超過 utilization 時則 split bucket</p>
-<p>其演算法如下</p>
-<div class="highlight"><pre><span class="err">給定</span> <span class="nx">N</span> <span class="err">為初始的</span> <span class="nx">bucket</span> <span class="err">數</span><span class="p">,</span> <span class="nx">point</span> <span class="nx">Next</span> <span class="err">指向第</span><span class="mi">0</span> <span class="err">個</span> <span class="nx">bucket ...</span></pre></div>-->
-                                <p>linear hashing 是一種 <font style="color:red;">dynamic hashing</font> 的方法</p>
-<p>其儲存的欄位分為兩種 primary page, overflow page</p>
-<p>並設N 為初始的 bucket 數</p>
-<p>h_level (key) = key mod [N * 2 ^ N]</p>
-<p>並存在一個 point Next 指向下一個要分割的 bucket</p>
-<p>而 linear hashing 存在一個 utilization 的機制</p>
-<p>超過 utilization 時則 split bucket</p>
-<p>其演算法如下</p>
-<div class="highlight"><pre><span class="err">給定</span> <span class="nx">N</span> <span class="err">為初始的</span> <span class="nx">bucket</span> <span class="err">數</span><span class="p">,</span> <span class="nx">point</span> <span class="nx">Next</span> <span class="err">指向第</span><span class="mi">0</span> <span class="err">個</span> <span class="nx">bucket</span>
-
-<span class="nx">utilization</span> <span class="nx">is</span> <span class="nx">between</span> <span class="mi">40</span><span class="o">%</span> <span class="nx">and</span> <span class="mi">80</span><span class="o">%</span>
-
-<span class="nx">level</span> <span class="err">為</span> <span class="mi">0</span>
-
-<span class="mi">1</span><span class="p">.</span> <span class="err">透過</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來將</span> <span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
-
-<span class="mi">2</span><span class="p">.</span> <span class="err">檢查</span> <span class="nx">utilization</span> <span class="err">是否超過</span> <span class="mi">80</span><span class="o">%</span><span class="p">,</span> <span class="err">如果超過則</span> <span class="nx">split</span> <span class="nx">next</span> <span class="err">指到的</span> <span class="nx">bucket</span>
-
-<span class="mi">3</span><span class="p">.</span> <span class="err">重複步驟</span><span class="mi">2</span> <span class="err">直到</span> <span class="nx">utilization</span> <span class="err">降到</span> <span class="mi">80</span><span class="o">%</span> <span class="err">以下</span>
-
-<span class="err">如此可成功地將所有的</span><span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
-</pre></div>
-
-
-<p>而split 的細節是</p>
-<div class="highlight"><pre><span class="err">將</span><span class="nx">bucket</span> <span class="err">中的值去</span> <span class="nx">mod</span> <span class="mi">2</span> <span class="err">的倍數</span>
-
-<span class="err">如果無法分開</span><span class="p">,</span> <span class="err">則挑選大一點的</span> <span class="mi">2</span><span class="err">的倍數</span>
-
-<span class="nx">split</span> <span class="err">結束之後將</span> <span class="nx">next</span> <span class="err">指向下一個</span><span class="nx">bucket</span>
-
-<span class="err">如果下一個</span> <span class="nx">bucket</span> <span class="o">&gt;=</span> <span class="nx">N</span>
-
-<span class="err">則將</span> <span class="nx">next</span> <span class="err">歸</span><span class="mi">0</span><span class="p">,</span> <span class="err">而</span> <span class="nx">level</span> <span class="o">+</span><span class="mi">1</span>
-
-<span class="err">要再</span><span class="nx">insert</span> <span class="err">新的</span> <span class="nx">number</span> <span class="err">時則使用新的</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來</span> <span class="nx">hash</span>
-</pre></div>
-
-
-<p><a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank">詳細教學與範例</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html" rel="bookmark" title="Permalink to [hash] linear probing">
-                                       [hash] linear probing
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>linear probing 是一種用來碰撞處理的策略</p>
-<p>如果hash 過去的欄位已有值存在</p>
-<p>則往後尋找直到遇到第一個空的欄位為止</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank">linear probing – JAVA</a></p>-->
-                                <p>linear probing 是一種用來碰撞處理的策略</p>
-<p>如果hash 過去的欄位已有值存在</p>
-<p>則往後尋找直到遇到第一個空的欄位為止</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank">linear probing – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html" rel="bookmark" title="Permalink to [hash] rehashing">
-                                       [hash] rehashing
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>-->
-                                <p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="bookmark" title="Permalink to [linux] ubuntu 架設 ftp (使用vsftp)">
-                                       [linux] ubuntu 架設 ftp (使用vsftp)
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<ul>
-<li>
-<p>安裝指令:</p>
-<p><code>sudo apt-get install vsftpd</code></p>
-</li>
-<li>
-<p>確認是否安裝成功:</p>
-<p><code>netstat -tul | grep ftp</code></p>
-<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
-</li>
-<li>
-<p>修改設定檔:</p>
-<p><code>sudo vim /etc/vsftpd.conf</code></p>
-<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
-<span class="nv">anonymous_enable</span><span class="o">=</span>NO
-<span class="c">#接受本地用戶</span>
-<span class="nv">local_enable</span><span class="o">=</span>YES
-<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
-<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
-<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
-<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
-<span class="nv">write_enable</span><span class="o">=</span>YES
-</pre></div>
-
-
-</li>
-<li>
-<p>修改完記得重新啟動:</p>
-<p><code>sudo /etc/init.d/vsftpd restart</code></p>
-</li>
-</ul>
-<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>-->
-                                <ul>
-<li>
-<p>安裝指令:</p>
-<p><code>sudo apt-get install vsftpd</code></p>
-</li>
-<li>
-<p>確認是否安裝成功:</p>
-<p><code>netstat -tul | grep ftp</code></p>
-<p>如果有出現 <code>Listen</code> 即為安裝成功</p>
-</li>
-<li>
-<p>修改設定檔:</p>
-<p><code>sudo vim /etc/vsftpd.conf</code></p>
-<div class="highlight"><pre><span class="c">#接受匿名用戶</span>
-<span class="nv">anonymous_enable</span><span class="o">=</span>NO
-<span class="c">#接受本地用戶</span>
-<span class="nv">local_enable</span><span class="o">=</span>YES
-<span class="c">#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置</span>
-<span class="c">#anon_upload_enable=YES,若想要匿名用戶可以建立目錄</span>
-<span class="c">#則需要anon_mkdir_write_enable=YES.</span>
-<span class="c">#這裡禁止匿名用戶上傳,所以不設置這兩項.</span>
-<span class="nv">write_enable</span><span class="o">=</span>YES
-</pre></div>
-
-
-</li>
-<li>
-<p>修改完記得重新啟動:</p>
-<p><code>sudo /etc/init.d/vsftpd restart</code></p>
-</li>
-</ul>
-<p><a href="http://blog.udn.com/nigerchen/2261345" target="_blank">參考來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="bookmark" title="Permalink to [linux] recursively chmod">
-                                       [linux] recursively chmod
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
-<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
-</pre></div>
-
-
-<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>-->
-                                <p>chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限</p>
-<div class="highlight"><pre>chmod -R 777 /home/shi/Desktop/Host/lab/txp
-</pre></div>
-
-
-<p><a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank">資料來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="bookmark" title="Permalink to [linux] userdel: user xxx is currently logged in">
-                                       [linux] userdel: user xxx is currently logged in
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
-
-    on 2014-06-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p><code>userdel xxx</code> 可以刪除使用者帳號</p>
-<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
-<p>如果遇到 user xxx is currently logged in</p>
-<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
-<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>-->
-                                <p><code>userdel xxx</code> 可以刪除使用者帳號</p>
-<p><code>userdel -r xxx</code> 連家目錄也刪掉</p>
-<p>如果遇到 user xxx is currently logged in</p>
-<p>則用 <code>userdel -rf xxx</code> 強制刪除即可</p>
-<p><a href="http://blog.sina.com.cn/s/blog_4888f8810100vcg9.html" target="_blank">資料來源</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html" rel="bookmark" title="Permalink to [pelican] 安裝 Pelican">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/pelican/[pelican]_pelican_install.html" rel="bookmark" title="Permalink to [pelican] 安裝 Pelican">
                                        [pelican] 安裝 Pelican
                                     </a>
                                 </h1>
@@ -682,7 +160,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a>
 
-    on 2014-06-19
+    on 2014-07-11
 
 
 
@@ -722,7 +200,449 @@
 <p>接著就可以下 <code>pelican-quickstart</code> 來自動產生資料夾</p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/06/pelican/[pelican]_pelican_install.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/pelican/[pelican]_pelican_install.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/research/[research]_hilbert_curve.html" rel="bookmark" title="Permalink to [research] Hilbert Curve">
+                                       [research] Hilbert Curve
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/research.html">research</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>令 N = 2^n</p>
+<p>在一個 size 為 N x N 的二維空間中</p>
+<p>Hilbert curve 會遞迴地將我們的空間切成四個相同size 的 blocks</p>
+<p>而每一個 block 我們都會給一個 0 ~ N^2 -1 的number</p>
+<p><img src="http://yljh21328.github.io/blog/images/hilbert_curve.png" /></p>
+<p>舉例來說</p>
+<p>order n = 1 時我們可以得到一串分別是 0 ~ 3 的數字</p>
+<p>而 order n = 2 則是由 order n = 1 演化而來</p>
+<p>只要將order n = 1 的第一個 block 與最後一個 block 做 reflection ...</p>-->
+                                <p>令 N = 2^n</p>
+<p>在一個 size 為 N x N 的二維空間中</p>
+<p>Hilbert curve 會遞迴地將我們的空間切成四個相同size 的 blocks</p>
+<p>而每一個 block 我們都會給一個 0 ~ N^2 -1 的number</p>
+<p><img src="http://yljh21328.github.io/blog/images/hilbert_curve.png" /></p>
+<p>舉例來說</p>
+<p>order n = 1 時我們可以得到一串分別是 0 ~ 3 的數字</p>
+<p>而 order n = 2 則是由 order n = 1 演化而來</p>
+<p>只要將order n = 1 的第一個 block 與最後一個 block 做 reflection 跟 rotation 即可得到結果</p>
+<p>依此類推</p>
+<p>order n = 3 是由 order n = 2 演化而來, 做的是相似的 reflection 與 rotation</p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/research/[research]_hilbert_curve.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/research/[research]_the_bucket_numbering_scheme.html" rel="bookmark" title="Permalink to [research] The Bucket Numbering Scheme">
+                                       [research] The Bucket Numbering Scheme
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/research.html">research</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>一個空間上的物件可以是任意形狀</p>
+<p>而通常我們會取一個 bounding rectangle 來表示這個物件</p>
+<p>而坐標可利用 Xl, Xr, Yb, Yt四個屬性來定義</p>
+<p>在此我們用 L(Xl,Yb) 與 U(Xr,Yt) 來表示一個物件</p>
+<p>在 Bucket Number Scheme 裡面我們將一個 Bucket 以 0 或 1 來表示</p>
+<p>也稱作 <font style="color:red;">DZ expression</font></p>
+<p>表示的規則有兩點：</p>
+<ul>
+<li>
+<p>在x軸中的0表示左半部, 1表示右半步。而在y軸中0表示下半部, 1表示上半部</p>
+</li>
+<li>
+<p>越左邊的bit 代表越前面的binary division, 越後面的bit 代表越裡面的division</p>
+</li>
+</ul>
+<p><img src="http://yljh21328.github.io/blog/images/dz_expression.png" /></p>
+<p>以圖中的例子</p>
+<p>舉例來說 0010* 表示的是</p>
+<p>00代表的是整個區塊裡面的左半部及下半部</p>
+<p>10代表的是左半部及下半部中，右半部及下半部 ...</p>-->
+                                <p>一個空間上的物件可以是任意形狀</p>
+<p>而通常我們會取一個 bounding rectangle 來表示這個物件</p>
+<p>而坐標可利用 Xl, Xr, Yb, Yt四個屬性來定義</p>
+<p>在此我們用 L(Xl,Yb) 與 U(Xr,Yt) 來表示一個物件</p>
+<p>在 Bucket Number Scheme 裡面我們將一個 Bucket 以 0 或 1 來表示</p>
+<p>也稱作 <font style="color:red;">DZ expression</font></p>
+<p>表示的規則有兩點：</p>
+<ul>
+<li>
+<p>在x軸中的0表示左半部, 1表示右半步。而在y軸中0表示下半部, 1表示上半部</p>
+</li>
+<li>
+<p>越左邊的bit 代表越前面的binary division, 越後面的bit 代表越裡面的division</p>
+</li>
+</ul>
+<p><img src="http://yljh21328.github.io/blog/images/dz_expression.png" /></p>
+<p>以圖中的例子</p>
+<p>舉例來說 0010* 表示的是</p>
+<p>00代表的是整個區塊裡面的左半部及下半部</p>
+<p>10代表的是左半部及下半部中，右半部及下半部</p>
+<p>以此類推。</p>
+<p>而在此我們也會使用 Max_bucket 來記錄所有bucket 中最大的 bucket number</p>
+<p><img src="http://yljh21328.github.io/blog/images/peano_curve.png" /></p>
+<p>在 Fig.6(a) 中我們將 binary form 轉成 decimal form</p>
+<p>而在 Fig.6(b) 中我們可以依照順序劃線來得到 N-order peano curve</p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/research/[research]_the_bucket_numbering_scheme.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_binary_search.html" rel="bookmark" title="Permalink to [search] binary search">
+                                       [search] binary search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>binary search 是一種用於事先排序好的資料的搜尋演算法</p>
+<p>算是 <font style="color:red;">divide and conquer</font> 的變形 (少了 merge 的步驟)</p>
+<p>核心概念於訂定三個 index : low, mid, high</p>
+<p>如果要找的 key 大於 data[mid], 則搜尋右半邊</p>
+<p>如果小於 data[mid] 則搜尋左半邊</p>
+<p>否則回傳mid 的位置</p>
+<p>一直找下去</p>
+<p>如果 high &lt; low 則代表找尋不到</p>
+<p>因其每次可以prune 掉一半的資料</p>
+<p>所以其時間複雜度為 O(n log n)</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank">binary search – JAVA</a></p>-->
+                                <p>binary search 是一種用於事先排序好的資料的搜尋演算法</p>
+<p>算是 <font style="color:red;">divide and conquer</font> 的變形 (少了 merge 的步驟)</p>
+<p>核心概念於訂定三個 index : low, mid, high</p>
+<p>如果要找的 key 大於 data[mid], 則搜尋右半邊</p>
+<p>如果小於 data[mid] 則搜尋左半邊</p>
+<p>否則回傳mid 的位置</p>
+<p>一直找下去</p>
+<p>如果 high &lt; low 則代表找尋不到</p>
+<p>因其每次可以prune 掉一半的資料</p>
+<p>所以其時間複雜度為 O(n log n)</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/binary_search/binary_search.java" target="_blank">binary search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_binary_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_fibonacci_search.html" rel="bookmark" title="Permalink to [search] fibonacci search">
+                                       [search] fibonacci search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋</p>
+<p>不同的是 fibonacci 是用 <font style="color:red;">fibonacci number</font> 來切割</p>
+<p>也就是說我們會先建立一個 fibonacci tree</p>
+<p>然後再依照此 tree 來做search</p>
+<p>示意圖 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">來源</a></p>
+<p><img src="http://yljh21328.github.io/blog/images/fibonacci_tree.jpg" /></p>
+<p>fibonacci tree 的 root 是由資料個數 n 決定的</p>
+<p>先利用 Fib(k+1) &gt;= n + 1</p>
+<p>來決定 k</p>
+<p>再以Fib(k) 當作root 的值</p>
+<p>而其左子樹為 (k – 1) 階Fibonacci tree</p>
+<p>右子樹為 (k-2) 階 Fibonacci tree</p>
+<p>依此類推可以建立完整的 ...</p>-->
+                                <p>fibonacci search 跟 binary search 一樣都是使用二分法來進行切割範圍和搜尋</p>
+<p>不同的是 fibonacci 是用 <font style="color:red;">fibonacci number</font> 來切割</p>
+<p>也就是說我們會先建立一個 fibonacci tree</p>
+<p>然後再依照此 tree 來做search</p>
+<p>示意圖 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">來源</a></p>
+<p><img src="http://yljh21328.github.io/blog/images/fibonacci_tree.jpg" /></p>
+<p>fibonacci tree 的 root 是由資料個數 n 決定的</p>
+<p>先利用 Fib(k+1) &gt;= n + 1</p>
+<p>來決定 k</p>
+<p>再以Fib(k) 當作root 的值</p>
+<p>而其左子樹為 (k – 1) 階Fibonacci tree</p>
+<p>右子樹為 (k-2) 階 Fibonacci tree</p>
+<p>依此類推可以建立完整的 Fibonacci tree</p>
+<p>更多詳細資料可參考 – <a href="http://puremonkey2010.blogspot.tw/2010/12/blog-post.html" target="_blank">程式扎記</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_fibonacci_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_interpolation_search.html" rel="bookmark" title="Permalink to [search] interpolation search">
+                                       [search] interpolation search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>interpolation search 為 binary search 的改良版</p>
+<p>適合用在資料平均分佈的狀況下</p>
+<p>其內插法公式為</p>
+<p>mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)</p>
+<p>而其餘的搜尋步驟則與 binary search 差不多</p>
+<p>平均而言其時間複雜度優於 <code>O(log n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank">interpolation search – JAVA</a></p>-->
+                                <p>interpolation search 為 binary search 的改良版</p>
+<p>適合用在資料平均分佈的狀況下</p>
+<p>其內插法公式為</p>
+<p>mid = low + ((key – data[low]) / (data[high] – data[low])) * (high – low)</p>
+<p>而其餘的搜尋步驟則與 binary search 差不多</p>
+<p>平均而言其時間複雜度優於 <code>O(log n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/interpolation_search/interpolation_search.java" target="_blank">interpolation search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_interpolation_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_linear_search.html" rel="bookmark" title="Permalink to [search] linear search">
+                                       [search] linear search
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/search.html">search</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>linear search 是一個最簡單的搜尋方法</p>
+<p>又稱為 sequential search</p>
+<p>其搜尋方式就是從頭搜到尾</p>
+<p>worst case 的時間複雜度為 <code>O(n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank">linear search – JAVA</a></p>-->
+                                <p>linear search 是一個最簡單的搜尋方法</p>
+<p>又稱為 sequential search</p>
+<p>其搜尋方式就是從頭搜到尾</p>
+<p>worst case 的時間複雜度為 <code>O(n)</code></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SEARCH/linear_search/linear_search.java" target="_blank">linear search – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/search/[search]_linear_search.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_bubble_sort.html" rel="bookmark" title="Permalink to [sort] bubble sort">
+                                       [sort] bubble sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>bubble sort 是一種 internal sort</p>
+<p>適合資料量小或已經有初步排序的資料使用</p>
+<p>其 worst case 為 <code>O(n^2)</code></p>
+<p>如果是要由小排到大</p>
+<p>核心概念是由前往後兩兩比對，若前者大於後者則交換</p>
+<p>並由較大者繼續與後面的元素兩兩比對。</p>
+<p>每scan一次能確定一個元素的最後位置</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank">傳統版 - JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank">改良版 - JAVA</a></p>
+<p>在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap</p>
+<p>如果沒有則不需要額外的 scan</p>-->
+                                <p>bubble sort 是一種 internal sort</p>
+<p>適合資料量小或已經有初步排序的資料使用</p>
+<p>其 worst case 為 <code>O(n^2)</code></p>
+<p>如果是要由小排到大</p>
+<p>核心概念是由前往後兩兩比對，若前者大於後者則交換</p>
+<p>並由較大者繼續與後面的元素兩兩比對。</p>
+<p>每scan一次能確定一個元素的最後位置</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank">傳統版 - JAVA</a></p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank">改良版 - JAVA</a></p>
+<p>在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap</p>
+<p>如果沒有則不需要額外的 scan</p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_bubble_sort.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_heap_sort.html" rel="bookmark" title="Permalink to [sort] heap sort">
+                                       [sort] heap sort
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>heap sort 使用了 heap 來幫助我們做sort 的工作</p>
+<p>時間複雜度為 <code>O(n logn)</code></p>
+<p>為穩定排序法</p>
+<p>核心概念為運用heap 的特性</p>
+<p>假設我們有一個 size 為 n 的 heap</p>
+<p>每次將root 與heap 的最後一個位置交換</p>
+<p>然後再執行一次 size 為 n-1 的 <font style="color:red;">heapify()</font></p>
+<p>重複此動作直至所有元素都被排序完為止</p>
+<p>在實作的部分</p>
+<p>我們習慣將存data 的陣列的第0個位置空出來</p>
+<p>從第1個位置開始存</p>
+<p>這樣才能符合 heap 的特性</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank">heap sort – JAVA</a></p>-->
+                                <p>heap sort 使用了 heap 來幫助我們做sort 的工作</p>
+<p>時間複雜度為 <code>O(n logn)</code></p>
+<p>為穩定排序法</p>
+<p>核心概念為運用heap 的特性</p>
+<p>假設我們有一個 size 為 n 的 heap</p>
+<p>每次將root 與heap 的最後一個位置交換</p>
+<p>然後再執行一次 size 為 n-1 的 <font style="color:red;">heapify()</font></p>
+<p>重複此動作直至所有元素都被排序完為止</p>
+<p>在實作的部分</p>
+<p>我們習慣將存data 的陣列的第0個位置空出來</p>
+<p>從第1個位置開始存</p>
+<p>這樣才能符合 heap 的特性</p>
+<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank">heap sort – JAVA</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_heap_sort.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->

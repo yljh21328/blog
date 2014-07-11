@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/sort.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-19T13:11:23+08:00</updated><entry><title>[sort] bubble sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_bubble_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_bubble_sort.html</id><summary type="html">&lt;p&gt;bubble sort 是一種 internal sort&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/sort.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-07-11T22:48:12+08:00</updated><entry><title>[sort] bubble sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_bubble_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_bubble_sort.html</id><summary type="html">&lt;p&gt;bubble sort 是一種 internal sort&lt;/p&gt;
 &lt;p&gt;適合資料量小或已經有初步排序的資料使用&lt;/p&gt;
 &lt;p&gt;其 worst case 為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果是要由小排到大&lt;/p&gt;
@@ -9,7 +9,7 @@
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/traditional_bubble_sort/bubble_sort.java" target="_blank"&gt;傳統版 - JAVA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/better_bubble_sort/bubble_sort.java" target="_blank"&gt;改良版 - JAVA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在改良版的bubble sort 裡加入了 flag 來判斷該次 scan 有沒有做 swap&lt;/p&gt;
-&lt;p&gt;如果沒有則不需要額外的 scan&lt;/p&gt;</summary></entry><entry><title>[sort] heap sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_heap_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_heap_sort.html</id><summary type="html">&lt;p&gt;heap sort 使用了 heap 來幫助我們做sort 的工作&lt;/p&gt;
+&lt;p&gt;如果沒有則不需要額外的 scan&lt;/p&gt;</summary></entry><entry><title>[sort] heap sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_heap_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_heap_sort.html</id><summary type="html">&lt;p&gt;heap sort 使用了 heap 來幫助我們做sort 的工作&lt;/p&gt;
 &lt;p&gt;時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;為穩定排序法&lt;/p&gt;
 &lt;p&gt;核心概念為運用heap 的特性&lt;/p&gt;
@@ -21,7 +21,7 @@
 &lt;p&gt;我們習慣將存data 的陣列的第0個位置空出來&lt;/p&gt;
 &lt;p&gt;從第1個位置開始存&lt;/p&gt;
 &lt;p&gt;這樣才能符合 heap 的特性&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank"&gt;heap sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] insertion sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_insertion_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_insertion_sort.html</id><summary type="html">&lt;p&gt;insertion sort 是一個 internal sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/heap_sort/heap_sort.java" target="_blank"&gt;heap sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] insertion sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_insertion_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_insertion_sort.html</id><summary type="html">&lt;p&gt;insertion sort 是一個 internal sort&lt;/p&gt;
 &lt;p&gt;其worst case 的時間複雜度為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果要由小排到大&lt;/p&gt;
 &lt;p&gt;核心概念為逐次檢查元素與其之前元素的大小&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;直到找到正確的位置為止&lt;/p&gt;
 &lt;p&gt;因為在 scan 的過程中會發生多次的搬移&lt;/p&gt;
 &lt;p&gt;所以如果以 linked list 來實作的話會快很多&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/insertion_sort/insertion_sort.java" target="_blank"&gt;Array版 – Java&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] merge sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_merge_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_merge_sort.html</id><summary type="html">&lt;p&gt;merge sort 是一個 external sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/insertion_sort/insertion_sort.java" target="_blank"&gt;Array版 – Java&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] merge sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_merge_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_merge_sort.html</id><summary type="html">&lt;p&gt;merge sort 是一個 external sort&lt;/p&gt;
 &lt;p&gt;其時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;適合合併多個檔案並排序&lt;/p&gt;
 &lt;p&gt;如果有兩個檔案要做排序&lt;/p&gt;
@@ -44,7 +44,7 @@
 &lt;p&gt;直至兩個檔案都讀完為止&lt;/p&gt;
 &lt;p&gt;如此我們就可以得到一個排序過後的sequence&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/direct_merge_sort" target="_blank"&gt;直接merge – JAVA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank"&gt;分割檔案後再merge – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] quick sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_quick_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_quick_sort.html</id><summary type="html">&lt;p&gt;quick sort 是一個內部排序法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/tree/master/SORT/complete_merge_sort" target="_blank"&gt;分割檔案後再merge – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] quick sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_quick_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_quick_sort.html</id><summary type="html">&lt;p&gt;quick sort 是一個內部排序法&lt;/p&gt;
 &lt;p&gt;平均時間複雜度為 &lt;code&gt;O(n logn)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 O(n^2)&lt;/p&gt;
 &lt;p&gt;採取的是 &lt;font stlye="color:red;"&gt;divide and conquer&lt;/font&gt; 的模式來解決問題&lt;/p&gt;
@@ -57,7 +57,7 @@
 &lt;p&gt;結束這回合&lt;/p&gt;
 &lt;p&gt;此時便能決定K的位置&lt;/p&gt;
 &lt;p&gt;然後再利用divide and conquer 來解決左邊與右邊尚未解決的subsequence&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank"&gt;quick sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] radix sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_radix_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_radix_sort.html</id><summary type="html">&lt;p&gt;radix sort 是一個不需要兩兩比較元素的一種排序法&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/quick_sort/quick_sort.java" target="_blank"&gt;quick sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] radix sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_radix_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_radix_sort.html</id><summary type="html">&lt;p&gt;radix sort 是一個不需要兩兩比較元素的一種排序法&lt;/p&gt;
 &lt;p&gt;其核心概念是透過分配每一個元素到適當的位置&lt;/p&gt;
 &lt;p&gt;我們可以先從最低位數開始比較或從最高位數開始比較都可以&lt;/p&gt;
 &lt;p&gt;假設我們從最低位數開始比較&lt;/p&gt;
@@ -69,13 +69,13 @@
 &lt;p&gt;缺點是需要花費大量的額外空間來暫存資料&lt;/p&gt;
 &lt;p&gt;若n 很大, 但是p 固定或很小&lt;/p&gt;
 &lt;p&gt;則此演算法十分有效率&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank"&gt;radix sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] selection sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_selection_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_selection_sort.html</id><summary type="html">&lt;p&gt;selection sort 是一種 internal sort&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/radix_sort/radix_sort.java" target="_blank"&gt;radix sort – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] selection sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_selection_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_selection_sort.html</id><summary type="html">&lt;p&gt;selection sort 是一種 internal sort&lt;/p&gt;
 &lt;p&gt;適合小資料或已有初步排序的資料使用&lt;/p&gt;
 &lt;p&gt;worst case 的時間複雜度為 &lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果要由小排到大&lt;/p&gt;
 &lt;p&gt;其核心概念為每次 scan 時選擇一個最小的元素&lt;/p&gt;
 &lt;p&gt;並與目前的位置的元素交換&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank"&gt;程式碼 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] shell sort</title><link href="http://yljh21328.github.io/blog/posts/2014/06/sort/[sort]_shell_sort.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/sort/[sort]_shell_sort.html</id><summary type="html">&lt;p&gt;shell sort 是 insertion sort 的改良版&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/SORT/selection_sort/selection_sort.java" target="_blank"&gt;程式碼 – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[sort] shell sort</title><link href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_shell_sort.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/sort/[sort]_shell_sort.html</id><summary type="html">&lt;p&gt;shell sort 是 insertion sort 的改良版&lt;/p&gt;
 &lt;p&gt;average case 的時間複雜度為 &lt;code&gt;O(n ^ 3/2)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;屬於internal sort, 穩定排序&lt;/p&gt;
 &lt;p&gt;目的是為了減少 insertion sort 的搬移次數&lt;/p&gt;

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Chris Yang" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content="[hash] linear hashing"/>
+    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_linear_hashing.html"/>
+    <meta property="og:site_name" content="Chris Yang | 學習筆記"/>
+    <meta property="og:type" content="article"/>
+
+    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_linear_hashing.html" />
+
+    <title>[hash] linear hashing | Chris Yang | 學習筆記</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://yljh21328.github.io/blog/theme/css/main.css" />
+    <link href="http://yljh21328.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chris Yang | 學習筆記 Atom Feed" />
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
+
+<body id="index">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="http://yljh21328.github.io/blog/">Chris Yang | 學習筆記 </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ><a href="http://yljh21328.github.io/blog/category/css.html">css</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/git.html">git</a></li>
+                            <li class="active"><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/latex.html">latex</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/linux.html">linux</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/research.html">research</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_linear_hashing.html" rel="bookmark"
+             title="Permalink to [hash] linear hashing">[hash] linear hashing</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
+
+    on 2014-07-11
+
+
+
+
+    
+</footer><!-- /.post-info -->
+
+        <p>linear hashing 是一種 <font style="color:red;">dynamic hashing</font> 的方法</p>
+<p>其儲存的欄位分為兩種 primary page, overflow page</p>
+<p>並設N 為初始的 bucket 數</p>
+<p>h_level (key) = key mod [N * 2 ^ N]</p>
+<p>並存在一個 point Next 指向下一個要分割的 bucket</p>
+<p>而 linear hashing 存在一個 utilization 的機制</p>
+<p>超過 utilization 時則 split bucket</p>
+<p>其演算法如下</p>
+<div class="highlight"><pre><span class="err">給定</span> <span class="nx">N</span> <span class="err">為初始的</span> <span class="nx">bucket</span> <span class="err">數</span><span class="p">,</span> <span class="nx">point</span> <span class="nx">Next</span> <span class="err">指向第</span><span class="mi">0</span> <span class="err">個</span> <span class="nx">bucket</span>
+
+<span class="nx">utilization</span> <span class="nx">is</span> <span class="nx">between</span> <span class="mi">40</span><span class="o">%</span> <span class="nx">and</span> <span class="mi">80</span><span class="o">%</span>
+
+<span class="nx">level</span> <span class="err">為</span> <span class="mi">0</span>
+
+<span class="mi">1</span><span class="p">.</span> <span class="err">透過</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來將</span> <span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
+
+<span class="mi">2</span><span class="p">.</span> <span class="err">檢查</span> <span class="nx">utilization</span> <span class="err">是否超過</span> <span class="mi">80</span><span class="o">%</span><span class="p">,</span> <span class="err">如果超過則</span> <span class="nx">split</span> <span class="nx">next</span> <span class="err">指到的</span> <span class="nx">bucket</span>
+
+<span class="mi">3</span><span class="p">.</span> <span class="err">重複步驟</span><span class="mi">2</span> <span class="err">直到</span> <span class="nx">utilization</span> <span class="err">降到</span> <span class="mi">80</span><span class="o">%</span> <span class="err">以下</span>
+
+<span class="err">如此可成功地將所有的</span><span class="nx">number</span> <span class="nx">insert</span> <span class="err">到</span> <span class="nx">bucket</span> <span class="err">之中</span>
+</pre></div>
+
+
+<p>而split 的細節是</p>
+<div class="highlight"><pre><span class="err">將</span><span class="nx">bucket</span> <span class="err">中的值去</span> <span class="nx">mod</span> <span class="mi">2</span> <span class="err">的倍數</span>
+
+<span class="err">如果無法分開</span><span class="p">,</span> <span class="err">則挑選大一點的</span> <span class="mi">2</span><span class="err">的倍數</span>
+
+<span class="nx">split</span> <span class="err">結束之後將</span> <span class="nx">next</span> <span class="err">指向下一個</span><span class="nx">bucket</span>
+
+<span class="err">如果下一個</span> <span class="nx">bucket</span> <span class="o">&gt;=</span> <span class="nx">N</span>
+
+<span class="err">則將</span> <span class="nx">next</span> <span class="err">歸</span><span class="mi">0</span><span class="p">,</span> <span class="err">而</span> <span class="nx">level</span> <span class="o">+</span><span class="mi">1</span>
+
+<span class="err">要再</span><span class="nx">insert</span> <span class="err">新的</span> <span class="nx">number</span> <span class="err">時則使用新的</span> <span class="nx">hash</span> <span class="kd">function</span> <span class="err">來</span> <span class="nx">hash</span>
+</pre></div>
+
+
+<p><a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank">詳細教學與範例</a></p>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a> and <a href="https://github.com/jsliang/pelican-fresh/graphs/contributors">contributors</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/linux.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-27T23:27:07+08:00</updated><entry><title>[linux] 安裝 lubuntu 13.10</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_lubuntu_install.html" rel="alternate"></link><updated>2014-06-27T23:27:07+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-27:posts/2014/06/linux/[linux]_lubuntu_install.html</id><summary type="html">&lt;p&gt;在這邊我安裝的是 lubuntu 13.10 64bit&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/linux.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-07-11T23:19:00+08:00</updated><entry><title>[linux] 修改 apt 的 mirror site</title><link href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_apt_mirror_site.html" rel="alternate"></link><updated>2014-07-11T23:19:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/linux/[linux]_apt_mirror_site.html</id><summary type="html">&lt;p&gt;安裝 ubuntu 預設的更新源是 &lt;code&gt;tw.archive.ubuntu.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;這個source 又慢又不穩定&lt;/p&gt;
+&lt;p&gt;利用以下的步驟就可以幫 ubuntu 換一個最佳的更新源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;cp /etc/apt/sources.list /etc/apt/sources.list.backup&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sudo /usr/bin/software-properties-gtk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tab 選 "Ubuntu軟體"&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下載自選擇 ""其它"&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然後跑 "選擇最佳的伺服器"&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;跑完就有最佳的更新源了&lt;/p&gt;
+&lt;p&gt;參考來源：&lt;a href="http://blog.longwin.com.tw/2011/02/ubuntu-mirror-site-repository-2011/"&gt;Ubuntu Linux 挑選最佳的 Mirror Site (APT Repository) &lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] ubuntu 架設 ftp (使用vsftp)</title><link href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_ftp_(vsftp).html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/linux/[linux]_ftp_(vsftp).html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安裝指令:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install vsftpd&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;確認是否安裝成功:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;netstat -tul | grep ftp&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果有出現 &lt;code&gt;Listen&lt;/code&gt; 即為安裝成功&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改設定檔:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo vim /etc/vsftpd.conf&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#接受匿名用戶&lt;/span&gt;
+&lt;span class="nv"&gt;anonymous_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;NO
+&lt;span class="c"&gt;#接受本地用戶&lt;/span&gt;
+&lt;span class="nv"&gt;local_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;YES
+&lt;span class="c"&gt;#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置&lt;/span&gt;
+&lt;span class="c"&gt;#anon_upload_enable=YES,若想要匿名用戶可以建立目錄&lt;/span&gt;
+&lt;span class="c"&gt;#則需要anon_mkdir_write_enable=YES.&lt;/span&gt;
+&lt;span class="c"&gt;#這裡禁止匿名用戶上傳,所以不設置這兩項.&lt;/span&gt;
+&lt;span class="nv"&gt;write_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;YES
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改完記得重新啟動:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo /etc/init.d/vsftpd restart&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://blog.udn.com/nigerchen/2261345" target="_blank"&gt;參考來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] 安裝 lubuntu 13.10</title><link href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_lubuntu_install.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/linux/[linux]_lubuntu_install.html</id><summary type="html">&lt;p&gt;在這邊我安裝的是 lubuntu 13.10 64bit&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://cdimage.ubuntu.com/lubuntu/releases/13.10/release/lubuntu-13.10-desktop-amd64.iso" target="_blank"&gt;lubuntu 13.10 64-bit 載點&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -57,43 +109,12 @@
 &lt;li&gt;.ssh&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[linux] ubuntu 架設 ftp (使用vsftp)</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_ftp_(vsftp).html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_ftp_(vsftp).html</id><summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;安裝指令:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo apt-get install vsftpd&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;確認是否安裝成功:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;netstat -tul | grep ftp&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;如果有出現 &lt;code&gt;Listen&lt;/code&gt; 即為安裝成功&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改設定檔:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo vim /etc/vsftpd.conf&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#接受匿名用戶&lt;/span&gt;
-&lt;span class="nv"&gt;anonymous_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;NO
-&lt;span class="c"&gt;#接受本地用戶&lt;/span&gt;
-&lt;span class="nv"&gt;local_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;YES
-&lt;span class="c"&gt;#可以上傳(全局控制).若想要匿名用戶也可上傳則需要設置&lt;/span&gt;
-&lt;span class="c"&gt;#anon_upload_enable=YES,若想要匿名用戶可以建立目錄&lt;/span&gt;
-&lt;span class="c"&gt;#則需要anon_mkdir_write_enable=YES.&lt;/span&gt;
-&lt;span class="c"&gt;#這裡禁止匿名用戶上傳,所以不設置這兩項.&lt;/span&gt;
-&lt;span class="nv"&gt;write_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;YES
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改完記得重新啟動:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo /etc/init.d/vsftpd restart&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="http://blog.udn.com/nigerchen/2261345" target="_blank"&gt;參考來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] recursively chmod</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_recursively_chmod.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_recursively_chmod.html</id><summary type="html">&lt;p&gt;chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>[linux] recursively chmod</title><link href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_recursively_chmod.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/linux/[linux]_recursively_chmod.html</id><summary type="html">&lt;p&gt;chmod 透過 -R 可以遞迴地更改資料夾及檔案的權限&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;chmod -R 777 /home/shi/Desktop/Host/lab/txp
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] userdel: user xxx is currently logged in</title><link href="http://yljh21328.github.io/blog/posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="alternate"></link><updated>2014-06-19T13:11:23+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io/blog,2014-06-19:posts/2014/06/linux/[linux]_userdel_xxx_is_currently_logged_in.html</id><summary type="html">&lt;p&gt;&lt;code&gt;userdel xxx&lt;/code&gt; 可以刪除使用者帳號&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.blog.highub.com/shell/linux-chmod-777-recursively/" target="_blank"&gt;資料來源&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[linux] userdel: user xxx is currently logged in</title><link href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_userdel_xxx_is_currently_logged_in.html" rel="alternate"></link><updated>2014-07-11T22:48:12+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-11:blog/posts/2014/07/linux/[linux]_userdel_xxx_is_currently_logged_in.html</id><summary type="html">&lt;p&gt;&lt;code&gt;userdel xxx&lt;/code&gt; 可以刪除使用者帳號&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;userdel -r xxx&lt;/code&gt; 連家目錄也刪掉&lt;/p&gt;
 &lt;p&gt;如果遇到 user xxx is currently logged in&lt;/p&gt;
 &lt;p&gt;則用 &lt;code&gt;userdel -rf xxx&lt;/code&gt; 強制刪除即可&lt;/p&gt;
