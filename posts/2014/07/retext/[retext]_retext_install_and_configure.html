@@ -5,14 +5,14 @@
     <meta name="author" content="Chris Yang" />
     <meta name="robots" content="index, follow"/>
 
-    <meta property="og:title" content="[pelican] 安裝 Pelican"/>
-    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/07/pelican/[pelican]_pelican_install.html"/>
+    <meta property="og:title" content="[retext] Retext 的安裝與設定"/>
+    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/07/retext/[retext]_retext_install_and_configure.html"/>
     <meta property="og:site_name" content="Chris Yang | 學習筆記"/>
     <meta property="og:type" content="article"/>
 
-    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/07/pelican/[pelican]_pelican_install.html" />
+    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/07/retext/[retext]_retext_install_and_configure.html" />
 
-    <title>[pelican] 安裝 Pelican | Chris Yang | 學習筆記</title>
+    <title>[retext] Retext 的安裝與設定 | Chris Yang | 學習筆記</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
@@ -48,9 +48,9 @@
                             <li ><a href="http://yljh21328.github.io/blog/category/hash.html">hash</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/latex.html">latex</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/linux.html">linux</a></li>
-                            <li class="active"><a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/research.html">research</a></li>
-                            <li ><a href="http://yljh21328.github.io/blog/category/retext.html">retext</a></li>
+                            <li class="active"><a href="http://yljh21328.github.io/blog/category/retext.html">retext</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
@@ -70,8 +70,8 @@
     <article>
       <header>
         <h1 class="entry-title">
-          <a href="http://yljh21328.github.io/blog/posts/2014/07/pelican/[pelican]_pelican_install.html" rel="bookmark"
-             title="Permalink to [pelican] 安裝 Pelican">[pelican] 安裝 Pelican</a></h1>
+          <a href="http://yljh21328.github.io/blog/posts/2014/07/retext/[retext]_retext_install_and_configure.html" rel="bookmark"
+             title="Permalink to [retext] Retext 的安裝與設定">[retext] Retext 的安裝與設定</a></h1>
       </header>
       <div class="entry-content">
 <footer class="post-info">
@@ -79,9 +79,9 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/pelican.html">pelican</a>
+    in <a href="http://yljh21328.github.io/blog/category/retext.html">retext</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -89,22 +89,37 @@
     
 </footer><!-- /.post-info -->
 
-        <p>Pelican 是一個 python 寫的 static site generator</p>
-<p>可以將產出的網頁放到 github page 上</p>
-<p>安裝過程可參考 <a href="http://docs.getpelican.com/en/3.3.0/getting_started.html#kickstart-your-site" target="_blank">Installing Pelican</a></p>
-<p>在此紀錄幾個重要的步驟</p>
-<ul>
-<li>
-<p>安裝 pelican <code>sudo pip install pelican</code></p>
-</li>
-<li>
-<p>安裝 Markdown <code>sudo pip install markdown</code></p>
-</li>
-<li>
-<p>安裝 ghp-import <code>sudo pip install ghp-import</code></p>
-</li>
-</ul>
-<p>接著就可以下 <code>pelican-quickstart</code> 來自動產生資料夾</p>
+        <p>Retext 是一個好用的 Markdown 編輯器</p>
+<p>支援同步瀏覽</p>
+<p>內建  apt-get  所安裝的版本是2.0</p>
+<p>如果要安裝  4.0的話</p>
+<p>安裝方式如下</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="o">:</span><span class="n">mitya57</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">retext</span>
+</pre></div>
+
+
+<p>如果是  ubuntu 12.04  安裝的話會有  dependency</p>
+<p>可以用  <code>aptitude</code>  來解決缺少python3-pyqt4的問題</p>
+<p>aptitude  會提供幾種策略解決，在筆者的環境是先按 N  再按  Y  </p>
+<p>使用第二種策略才解決成功</p>
+<p>參考來源：<a href="http://www.webupd8.org/2012/03/retext-30-released-text-editor-for.html" target="_blank">ReText 3.0 Released (Text Editor For Markdown And reStructuredText)</a></p>
+<p>安裝好之後 Retext  本身對於  markdown  的  css 跟 github 上差很多</p>
+<p>所以要做以下設定</p>
+<div class="highlight"><pre><span class="n">vim</span> <span class="o">~/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">ReText</span> <span class="n">Project</span><span class="o">/</span><span class="n">ReText</span><span class="p">.</span><span class="n">conf</span>
+
+<span class="p">[</span><span class="n">General</span><span class="p">]</span>
+<span class="n">useReST</span><span class="o">=</span><span class="nb">false</span>
+<span class="n">defaultExt</span><span class="o">=</span><span class="n">md</span>
+<span class="n">useWebkit</span><span class="o">=</span><span class="nb">true</span>
+<span class="n">styleSheet</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="err">自己的家目錄</span><span class="o">/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">ReText</span> <span class="n">project</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="n">css</span>
+</pre></div>
+
+
+<p>github.css  可以到  <a href="https://gist.github.com/andyferra/2554919" target="_blank">github.css</a>  下載</p>
+<p>如此就可以得到支援  github css  格式的  markdownn編輯器</p>
+<p>參考來源：<a href="http://whatever1992.blog.163.com/blog/static/21783208820134212303582/" target="_blank">配置Retext</a></p>
 
       </div><!-- /.entry-content -->
 
