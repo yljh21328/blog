@@ -5,14 +5,14 @@
     <meta name="author" content="Chris Yang" />
     <meta name="robots" content="index, follow"/>
 
-    <meta property="og:title" content="[sort] shell sort"/>
-    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_shell_sort.html"/>
+    <meta property="og:title" content="[vim] 安裝顏色模板 color scheme"/>
+    <meta property="og:url" content="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_color_scheme.html"/>
     <meta property="og:site_name" content="Chris Yang | 學習筆記"/>
     <meta property="og:type" content="article"/>
 
-    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_shell_sort.html" />
+    <link rel="canonical" href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_color_scheme.html" />
 
-    <title>[sort] shell sort | Chris Yang | 學習筆記</title>
+    <title>[vim] 安裝顏色模板 color scheme | Chris Yang | 學習筆記</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
@@ -52,9 +52,9 @@
                             <li ><a href="http://yljh21328.github.io/blog/category/research.html">research</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/retext.html">retext</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
-                            <li class="active"><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
-                            <li ><a href="http://yljh21328.github.io/blog/category/vim.html">vim</a></li>
+                            <li class="active"><a href="http://yljh21328.github.io/blog/category/vim.html">vim</a></li>
                         </ul>
 
                     </div>
@@ -71,8 +71,8 @@
     <article>
       <header>
         <h1 class="entry-title">
-          <a href="http://yljh21328.github.io/blog/posts/2014/07/sort/[sort]_shell_sort.html" rel="bookmark"
-             title="Permalink to [sort] shell sort">[sort] shell sort</a></h1>
+          <a href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_color_scheme.html" rel="bookmark"
+             title="Permalink to [vim] 安裝顏色模板 color scheme">[vim] 安裝顏色模板 color scheme</a></h1>
       </header>
       <div class="entry-content">
 <footer class="post-info">
@@ -80,7 +80,7 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/sort.html">sort</a>
+    in <a href="http://yljh21328.github.io/blog/category/vim.html">vim</a>
 
     on 2014-07-12
 
@@ -90,25 +90,28 @@
     
 </footer><!-- /.post-info -->
 
-        <p>shell sort 是 insertion sort 的改良版</p>
-<p>average case 的時間複雜度為 <code>O(n ^ 3/2)</code></p>
-<p>屬於internal sort, 穩定排序</p>
-<p>目的是為了減少 insertion sort 的搬移次數</p>
-<p>其核心概念為將要排序的數依<font color="red">劃分數</font>來分群</p>
-<p>最簡單的做法就是設定劃分數為2</p>
-<p>因此如果我們有8筆資料的話我們就可以分成4群  (4 = 8 / 2)</p>
-<p>而分別做完一次 insertion sort 之後</p>
-<p>再將劃分數 double, 也就是變成4</p>
-<p>此時我們只會劃分為2群 (2 = 8 / 2 / 2)</p>
-<p>依此類推</p>
-<p>直到分群結束為止</p>
-<p>而劃分的方式是採取間隔的方式來取元素</p>
-<p>舉例來說如果我們有8個元素</p>
-<p>63, 92, 27, 36, 45, 71, 58, 7</p>
-<p>因此我們亦開始會得到 {63,45}, {92,71}, {27,58} 以及{36,7} 4 群</p>
-<p>依此類推</p>
-<p>如此我們就可以減少insertion sort 的搬移次數</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/SORT/shell_sort/shell_sort.java" target="_blank">Array版 – JAVA</a></p>
+        <p>預設的 vim 顏色很難看</p>
+<p>利用 color scheme 可以讓 vim 長的好看一些</p>
+<p>可以在 <a href="http://cocopon.me/app/vim-color-gallery/" target="_blank"> Vim Colorscheme Gallery</a> 找一個適合自己的模板</p>
+<p>我是用 jellybeans</p>
+<p>安裝方式如下</p>
+<div class="highlight"><pre><span class="err">下載</span> <span class="n">jellybeans</span><span class="p">.</span><span class="n">vim</span>
+<span class="n">mkdir</span> <span class="o">~/</span><span class="p">.</span><span class="n">vim</span><span class="o">/</span><span class="n">colors</span>
+<span class="n">mv</span> <span class="n">jellybeans</span><span class="p">.</span><span class="n">vim</span> <span class="o">~/</span><span class="p">.</span><span class="n">vim</span><span class="o">/</span><span class="n">colors</span>
+</pre></div>
+
+
+<p>然後設定.vimrc</p>
+<div class="highlight"><pre><span class="n">vim</span> <span class="o">~/</span><span class="p">.</span><span class="n">vimrc</span>
+
+<span class="n">colorscheme</span> <span class="n">jellybeans</span>
+<span class="n">set</span> <span class="n">t_Co</span><span class="o">=</span><span class="mi">256</span>
+<span class="n">syntax</span> <span class="n">on</span>
+</pre></div>
+
+
+<p>參考來源：
+<a href="http://blog.longwin.com.tw/2009/03/choose-vim-color-scheme-2009/" target="_blank">挑選 Vim 顏色(Color Scheme)</a></p>
 
       </div><!-- /.entry-content -->
 

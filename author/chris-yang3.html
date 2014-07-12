@@ -54,6 +54,7 @@
                             <li ><a href="http://yljh21328.github.io/blog/category/search.html">search</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sort.html">sort</a></li>
                             <li ><a href="http://yljh21328.github.io/blog/category/sublime-text.html">sublime text</a></li>
+                            <li ><a href="http://yljh21328.github.io/blog/category/vim.html">vim</a></li>
                         </ul>
 
                     </div>
@@ -72,8 +73,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/latex/[latex]_latex_install.html" rel="bookmark" title="Permalink to [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio">
-                                       [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_apt_mirror_site.html" rel="bookmark" title="Permalink to [linux] 修改 apt 的 mirror site">
+                                       [linux] 修改 apt 的 mirror site
                                     </a>
                                 </h1>
                             </header>
@@ -83,79 +84,61 @@
         by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
     </address>
 
-    in <a href="http://yljh21328.github.io/blog/category/latex.html">latex</a>
+    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
 
     
-</footer><!-- /.post-info -->                                <!--<p>tex 是一個專業的排版格式，通常用來寫論文</p>
-<p>而 texlive 是一個用來編譯 tex 的套件</p>
-<p>texstudio 則是一套用來寫 tex 的編輯器</p>
+</footer><!-- /.post-info -->                                <!--<p>安裝 ubuntu 預設的更新源是 <code>tw.archive.ubuntu.com</code></p>
+<p>這個source 又慢又不穩定</p>
+<p>利用以下的步驟就可以幫 ubuntu 換一個最佳的更新源</p>
 <ul>
 <li>
-<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
+<p>cp /etc/apt/sources.list /etc/apt/sources.list.backup</p>
 </li>
 <li>
-<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
+<p>sudo /usr/bin/software-properties-gtk</p>
+</li>
+<li>
+<p>Tab 選 "Ubuntu軟體"</p>
+</li>
+<li>
+<p>下載自選擇 ""其它"</p>
+</li>
+<li>
+<p>然後跑 "選擇最佳的伺服器"</p>
 </li>
 </ul>
-<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
-<p>要先安裝 texlive 或 texstudio 都可以</p>
-<h3>安裝 texlive</h3>
-<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
-<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
-<p>大概要等上 15 ~ 20 分鐘</p>
-<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux ...</code></p>-->
-                                <p>tex 是一個專業的排版格式，通常用來寫論文</p>
-<p>而 texlive 是一個用來編譯 tex 的套件</p>
-<p>texstudio 則是一套用來寫 tex 的編輯器</p>
+<p>跑完就有最佳的更新源了</p>
+<p>參考來源：<a href="http://blog.longwin.com.tw/2011/02/ubuntu-mirror-site-repository-2011/">Ubuntu Linux 挑選最佳的 Mirror Site (APT Repository) </a></p>-->
+                                <p>安裝 ubuntu 預設的更新源是 <code>tw.archive.ubuntu.com</code></p>
+<p>這個source 又慢又不穩定</p>
+<p>利用以下的步驟就可以幫 ubuntu 換一個最佳的更新源</p>
 <ul>
 <li>
-<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
+<p>cp /etc/apt/sources.list /etc/apt/sources.list.backup</p>
 </li>
 <li>
-<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
+<p>sudo /usr/bin/software-properties-gtk</p>
+</li>
+<li>
+<p>Tab 選 "Ubuntu軟體"</p>
+</li>
+<li>
+<p>下載自選擇 ""其它"</p>
+</li>
+<li>
+<p>然後跑 "選擇最佳的伺服器"</p>
 </li>
 </ul>
-<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
-<p>要先安裝 texlive 或 texstudio 都可以</p>
-<h3>安裝 texlive</h3>
-<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
-<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
-<p>大概要等上 15 ~ 20 分鐘</p>
-<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH </code></p>
-<p>PATH 會因為安裝路徑有異，要仔細注意</p>
-<p>存檔之後記得下 <code>source ~/.bashrc</code></p>
-<h3>安裝 texstudio</h3>
-<p>從官網依照自己的版本下載完之後解壓縮</p>
-<p>利用 <code>dpkg -i xxx.deb</code> 安裝即可</p>
-<p>如果有相依性的問題，則改用 <code> gdebi xxx.deb</code> 來安裝</p>
-<p>gdebi 可以用來解相依性的問題</p>
-<p>如果打開 texstudio 上邊的功能列按鈕都消失了</p>
-<p>請安裝 <code>sudo apt-get install libqt4-svg</code></p>
-<p>安裝完之後請設定 compiler 以及 viewer</p>
-<p><code>options -&gt; configure texstudio -&gt;  Build -&gt; Default Compiler -&gt; XeLaTex</code> </p>
-<p><code>options -&gt; configure texstudio -&gt;  Commands -&gt; XeLaTex</code></p>
-<p>XeLatex 編譯出來是 pdf檔，需要比較多時間，適合最後腳交給老師的時候用</p>
-<p>而用 latex 編譯出來是 dvi檔，比較快，適合撰寫的時候使用</p>
-<p>用 pdf viewer 的後不會有問題</p>
-<p>而如果是 dvi viewer，則可能會出錯</p>
-<p>lubuntu 預設是用 evince 來開 dvi檔</p>
-<p>而 evince 會抓不到 texlive 的檔案</p>
-<p>所以要再安裝 texlive-binaries</p>
-<p>可以下 <code>sudo apt-get install texlive-binaries</code></p>
-<p>如此就能成功編譯</p>
-<p>參考連結：</p>
-<ul>
-<li><a href="http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing" target="_blank">http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing</a></li>
-<li><a href="http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux" target="_blank">http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux</a></li>
-</ul>
+<p>跑完就有最佳的更新源了</p>
+<p>參考來源：<a href="http://blog.longwin.com.tw/2011/02/ubuntu-mirror-site-repository-2011/">Ubuntu Linux 挑選最佳的 Mirror Site (APT Repository) </a></p>
                                 <!--
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/latex/[latex]_latex_install.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_apt_mirror_site.html">Read more...</a>
                                 </p>
                                 -->
                             </div><!-- /.entry-content -->
@@ -179,7 +162,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -262,6 +245,123 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_gnome3_with_extensions.html" rel="bookmark" title="Permalink to [linux] Gnome3 與 Extensions">
+                                       [linux] Gnome3 與 Extensions
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
+
+    on 2014-07-12
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>Ubuntu 12.04  預設的桌面是 Unity</p>
+<p>而習慣 Gnome 2  或想嘗試  Gnome 3  的朋友可以用下列指令安裝</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="o">:</span><span class="n">gnome3</span><span class="o">-</span><span class="n">team</span><span class="o">/</span><span class="n">gnome3</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>
+</pre></div>
+
+
+<p>參考來源：<a href="http://www.filiwiese.com/installing-gnome-on-ubuntu-12-04-precise-pangolin/" target="_blank">Installing Gnome 3 on Ubuntu 12.04 (Precise Pangolin)</a></p>
+<p>安裝完之後就有 Gnome  與 Gnome classic  可以選了</p>
+<p>而 Gnome 3  有一個很好玩的東西 ...</p>-->
+                                <p>Ubuntu 12.04  預設的桌面是 Unity</p>
+<p>而習慣 Gnome 2  或想嘗試  Gnome 3  的朋友可以用下列指令安裝</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="o">:</span><span class="n">gnome3</span><span class="o">-</span><span class="n">team</span><span class="o">/</span><span class="n">gnome3</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>
+</pre></div>
+
+
+<p>參考來源：<a href="http://www.filiwiese.com/installing-gnome-on-ubuntu-12-04-precise-pangolin/" target="_blank">Installing Gnome 3 on Ubuntu 12.04 (Precise Pangolin)</a></p>
+<p>安裝完之後就有 Gnome  與 Gnome classic  可以選了</p>
+<p>而 Gnome 3  有一個很好玩的東西</p>
+<p>叫做 Gnome Shell Extensions</p>
+<p>所有的 Extensions  都是用  javascript  寫的</p>
+<p>而安裝 extension  的方式非常簡單</p>
+<p>只要到  <a href="https://extensions.gnome.org/" target="_blank">GNOME Shell Extensions</a>  點選安裝即可</p>
+<p>下面列一下所有我安裝的extensions</p>
+<ul>
+<li>Advanced Settings in UserMenu</li>
+</ul>
+<p>這個可以開啟Gnome3的進階設定</p>
+<p>但是要先安裝 gnome-tweak-tool</p>
+<p><code>sudo apt-get install gnome-tweak-tool</code></p>
+<ul>
+<li>
+<p>Advanced Volume Mixer</p>
+</li>
+<li>
+<p>Alternative Status Menu</p>
+</li>
+<li>
+<p>Axe Menu</p>
+</li>
+<li>
+<p>Coverflow Alt-Tab</p>
+</li>
+<li>
+<p>Dash to Dock</p>
+</li>
+<li>
+<p>Extension List</p>
+</li>
+<li>
+<p>Hot-Corn-Dog</p>
+</li>
+</ul>
+<p>安裝這個原本左上角的  Activity Hot Corner  會跑到左下角</p>
+<ul>
+<li>Impatience</li>
+</ul>
+<p>加速 gnome-shell animation</p>
+<ul>
+<li>
+<p>Places Status Indicator</p>
+</li>
+<li>
+<p>Removable Drive Menu</p>
+</li>
+<li>
+<p>Remove Accessibility</p>
+</li>
+<li>
+<p>Remove Activities Button</p>
+</li>
+<li>
+<p>Show Desktop Button</p>
+</li>
+<li>
+<p>Weather</p>
+</li>
+<li>
+<p>Window options</p>
+</li>
+</ul>
+<p>參考來源：<a href="http://maxubuntu.blogspot.tw/2012/09/debian-gnome3.html" target="_blank">Debian Gnome3桌面筆記</a></p>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_gnome3_with_extensions.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
                                     <a href="http://yljh21328.github.io/blog/posts/2014/07/linux/[linux]_lubuntu_install.html" rel="bookmark" title="Permalink to [linux] 安裝 lubuntu 13.10">
                                        [linux] 安裝 lubuntu 13.10
                                     </a>
@@ -275,7 +375,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -388,7 +488,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -432,7 +532,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/linux.html">linux</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -461,6 +561,100 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
+                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/latex/[latex]_latex_install.html" rel="bookmark" title="Permalink to [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio">
+                                       [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
+    </address>
+
+    in <a href="http://yljh21328.github.io/blog/category/latex.html">latex</a>
+
+    on 2014-07-12
+
+
+
+
+    
+</footer><!-- /.post-info -->                                <!--<p>tex 是一個專業的排版格式，通常用來寫論文</p>
+<p>而 texlive 是一個用來編譯 tex 的套件</p>
+<p>texstudio 則是一套用來寫 tex 的編輯器</p>
+<ul>
+<li>
+<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
+</li>
+<li>
+<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
+</li>
+</ul>
+<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
+<p>要先安裝 texlive 或 texstudio 都可以</p>
+<h3>安裝 texlive</h3>
+<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
+<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
+<p>大概要等上 15 ~ 20 分鐘</p>
+<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux ...</code></p>-->
+                                <p>tex 是一個專業的排版格式，通常用來寫論文</p>
+<p>而 texlive 是一個用來編譯 tex 的套件</p>
+<p>texstudio 則是一套用來寫 tex 的編輯器</p>
+<ul>
+<li>
+<p><a href="https://www.tug.org/texlive/" target="_blank">texlive 官網</a></p>
+</li>
+<li>
+<p><a href="http://texstudio.sourceforge.net/" target="_blank">texstudio 官網</a></p>
+</li>
+</ul>
+<p>上面兩個連結可以下載 texlive 以及 texstudio</p>
+<p>要先安裝 texlive 或 texstudio 都可以</p>
+<h3>安裝 texlive</h3>
+<p>安裝 texlive 只要解壓縮後執行 <code>sudo ./install-tl</code></p>
+<p>然後提示界面輸入 <code>i</code> 後按確認即可安裝</p>
+<p>大概要等上 15 ~ 20 分鐘</p>
+<p>安裝完之後在 <code>~/.bashrc</code> 的最後面加上 <code>export PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH </code></p>
+<p>PATH 會因為安裝路徑有異，要仔細注意</p>
+<p>存檔之後記得下 <code>source ~/.bashrc</code></p>
+<h3>安裝 texstudio</h3>
+<p>從官網依照自己的版本下載完之後解壓縮</p>
+<p>利用 <code>dpkg -i xxx.deb</code> 安裝即可</p>
+<p>如果有相依性的問題，則改用 <code> gdebi xxx.deb</code> 來安裝</p>
+<p>gdebi 可以用來解相依性的問題</p>
+<p>如果打開 texstudio 上邊的功能列按鈕都消失了</p>
+<p>請安裝 <code>sudo apt-get install libqt4-svg</code></p>
+<p>安裝完之後請設定 compiler 以及 viewer</p>
+<p><code>options -&gt; configure texstudio -&gt;  Build -&gt; Default Compiler -&gt; XeLaTex</code> </p>
+<p><code>options -&gt; configure texstudio -&gt;  Commands -&gt; XeLaTex</code></p>
+<p>XeLatex 編譯出來是 pdf檔，需要比較多時間，適合最後腳交給老師的時候用</p>
+<p>而用 latex 編譯出來是 dvi檔，比較快，適合撰寫的時候使用</p>
+<p>用 pdf viewer 的後不會有問題</p>
+<p>而如果是 dvi viewer，則可能會出錯</p>
+<p>lubuntu 預設是用 evince 來開 dvi檔</p>
+<p>而 evince 會抓不到 texlive 的檔案</p>
+<p>所以要再安裝 texlive-binaries</p>
+<p>可以下 <code>sudo apt-get install texlive-binaries</code></p>
+<p>如此就能成功編譯</p>
+<p>參考連結：</p>
+<ul>
+<li><a href="http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing" target="_blank">http://askubuntu.com/questions/400975/some-icons-symbols-in-texstudio-are-missing</a></li>
+<li><a href="http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux" target="_blank">http://tex.stackexchange.com/questions/54403/which-dvi-viewer-on-linux</a></li>
+</ul>
+                                <!--
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/latex/[latex]_latex_install.html">Read more...</a>
+                                </p>
+                                -->
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
                                     <a href="http://yljh21328.github.io/blog/posts/2014/07/git/[git]_delete_remote_branch.html" rel="bookmark" title="Permalink to [git] 刪除遠端的branch">
                                        [git] 刪除遠端的branch
                                     </a>
@@ -474,7 +668,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/git.html">git</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -516,7 +710,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -597,7 +791,7 @@
 
     in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
 
-    on 2014-07-11
+    on 2014-07-12
 
 
 
@@ -620,104 +814,11 @@
                             <hr/>
                         </article>
                     </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_rehashing.html" rel="bookmark" title="Permalink to [hash] rehashing">
-                                       [hash] rehashing
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/hash.html">hash</a>
-
-    on 2014-07-11
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>-->
-                                <p>rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow</p>
-<p>則再改用另外一種 hash function 來hash</p>
-<p>而在此我們使用 <font style="color:red;">linked list</font> 來解決 collision 與 overflow 的問題</p>
-<p>透過不斷的往後串即可</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank">rehashing – JAVA</a></p>
-<p>而下面的範例是加上搜尋的功能</p>
-<p><a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank">rehashing with search – JAVA</a></p>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_rehashing.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="http://yljh21328.github.io/blog/posts/2014/07/css/ol_line_height.html" rel="bookmark" title="Permalink to [css] 編號清單加大行距">
-                                       [css] 編號清單加大行距
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="http://yljh21328.github.io/blog/author/chris-yang.html">Chris Yang</a>
-    </address>
-
-    in <a href="http://yljh21328.github.io/blog/category/css.html">css</a>
-
-    on 2014-07-11
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <!--<p>設定 <code>line-height</code> 即可</p>
-<script src="https://gist.github.com/yljh21328/f66bb72a267f651f6a25.js"></script>
-
-<p>長得像這樣：</p>
-<ol style="line-height:20px;">
-    <li>第一項</li>
-    <li>第二項</li>
-</ol>-->
-                                <p>設定 <code>line-height</code> 即可</p>
-<script src="https://gist.github.com/yljh21328/f66bb72a267f651f6a25.js"></script>
-
-<p>長得像這樣：</p>
-<ol style="line-height:20px;">
-    <li>第一項</li>
-    <li>第二項</li>
-</ol>
-                                <!--
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="http://yljh21328.github.io/blog/posts/2014/07/css/ol_line_height.html">Read more...</a>
-                                </p>
-                                -->
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
                     </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="http://yljh21328.github.io/blog/author/chris-yang2.html">&laquo;</a>
-    Page 3 / 3
+    Page 3 / 4
+        <a href="http://yljh21328.github.io/blog/author/chris-yang4.html">&raquo;</a>
 </p>
                 </section><!-- /#content -->
 </div>
