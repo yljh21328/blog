@@ -1,4 +1,6 @@
 Title: [search] binary search
+Date: 2014-06-17 00:00
+Modified: 2014-06-17 00:00
 Slug: [search]_binary_search
 Category: search
 Author: Chris Yang

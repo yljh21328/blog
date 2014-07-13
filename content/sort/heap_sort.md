@@ -1,4 +1,6 @@
 Title: [sort] heap sort
+Date: 2014-06-22 00:00
+Modified: 2014-06-22 00:00
 Slug: [sort]_heap_sort
 Category: sort
 Author: Chris Yang

@@ -1,4 +1,6 @@
 Title: [vim] 安裝顏色模板 color scheme
+Date: 2014-07-01 00:00
+Modified: 2014-07-01 00:00
 Slug: [vim]_color_scheme
 Category: vim
 Author: Chris Yang

@@ -1,4 +1,6 @@
 Title: [linux] Gnome3 與 Extensions
+Date: 2014-06-08 00:00
+Modified: 2014-06-08 00:00
 Slug: [linux]_gnome3_with_extensions
 Category: linux
 Author: Chris Yang

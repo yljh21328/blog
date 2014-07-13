@@ -1,4 +1,6 @@
 Title: [latex] 在 lubuntu 13.10 上安裝 texlive 與 texstudio
+Date: 2014-06-06 00:00
+Modified: 2014-06-06 00:00
 Slug: [latex]_latex_install
 Category: latex
 Author: Chris Yang

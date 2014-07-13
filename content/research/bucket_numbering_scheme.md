@@ -1,4 +1,6 @@
 Title: [research] The Bucket Numbering Scheme
+Date: 2014-06-14 00:00
+Modified: 2014-06-14 00:00
 Slug: [research]_the_bucket_numbering_scheme
 Category: research
 Author: Chris Yang

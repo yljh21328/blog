@@ -1,4 +1,6 @@
 Title: [search] linear search
+Date: 2014-06-20 00:00
+Modified: 2014-06-20 00:00
 Slug: [search]_linear_search
 Category: search
 Author: Chris Yang

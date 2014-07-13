@@ -1,4 +1,6 @@
 Title: [hash] linear probing
+Date: 2014-06-04 00:00
+Modified: 2014-06-04 00:00
 Slug: [hash]_linear_probing
 Category: hash
 Author: Chris Yang

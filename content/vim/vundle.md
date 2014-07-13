@@ -1,4 +1,6 @@
-Title: [vim] vundle 套件管理 
+Title: [vim] vundle 套件管理
+Date: 2014-07-02 00:00
+Modified: 2014-07-02 00:00
 Slug: [vim]_vundle_plugin
 Category: vim
 Author: Chris Yang

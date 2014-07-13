@@ -1,4 +1,6 @@
 Title: [sort] quick sort
+Date: 2014-06-25 00:00
+Modified: 2014-06-25 00:00
 Slug: [sort]_quick_sort
 Category: sort
 Author: Chris Yang

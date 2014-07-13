@@ -1,4 +1,6 @@
 Title: [sublime text] 安裝 livereload
+Date: 2014-06-29 00:00
+Modified: 2014-06-29 00:00
 Slug: [sublime_text]_install_livereload
 Category: sublime text
 Author: Chris Yang

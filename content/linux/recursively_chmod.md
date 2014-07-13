@@ -1,4 +1,6 @@
 Title: [linux] recursively chmod
+Date: 2014-06-10 00:00
+Modified: 2014-06-10 00:00
 Slug: [linux]_recursively_chmod
 Category: linux
 Author: Chris Yang

@@ -1,4 +1,6 @@
 Title: [search] interpolation search
+Date: 2014-06-19 00:00
+Modified: 2014-06-19 00:00
 Slug: [search]_interpolation_search
 Category: search
 Author: Chris Yang

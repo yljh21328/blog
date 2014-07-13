@@ -1,4 +1,6 @@
 Title: [linux] 修改 apt 的 mirror site
+Date: 2014-06-07 00:00
+Modified: 2014-06-07 00:00
 Slug: [linux]_apt_mirror_site
 Category: linux
 Author: Chris Yang

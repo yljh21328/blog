@@ -1,4 +1,6 @@
 Title: [hash] rehashing
+Date: 2014-06-05 00:00
+Modified: 2014-06-05 00:00
 Slug: [hash]_rehashing
 Category: hash
 Author: Chris Yang

@@ -1,4 +1,6 @@
 Title: [git] 刪除遠端的branch
+Date: 2014-06-02 00:00
+Modified: 2014-06-02 00:00
 Slug: [git]_delete_remote_branch
 Category: git
 Author: Chris Yang

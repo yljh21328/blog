@@ -1,4 +1,6 @@
 Title: [research] Hilbert Curve
+Date: 2014-06-15 00:00
+Modified: 2014-06-15 00:00
 Slug: [research]_hilbert_curve
 Category: research
 Author: Chris Yang

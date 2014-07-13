@@ -1,4 +1,6 @@
 Title: [retext] Retext 的安裝與設定
+Date: 2014-06-16 00:00
+Modified: 2014-06-16 00:00
 Slug: [retext]_retext_install_and_configure
 Category: retext
 Author: Chris Yang

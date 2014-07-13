@@ -1,4 +1,6 @@
 Title: [search] fibonacci search
+Date: 2014-06-18 00:00
+Modified: 2014-06-18 00:00
 Slug: [search]_fibonacci_search
 Category: search
 Author: Chris Yang

@@ -1,4 +1,6 @@
 Title: [sort] selection sort
+Date: 2014-06-27 00:00
+Modified: 2014-06-27 00:00
 Slug: [sort]_selection_sort
 Category: sort
 Author: Chris Yang

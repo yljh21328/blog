@@ -1,4 +1,6 @@
 Title: [sort] merge sort
+Date: 2014-06-24 00:00
+Modified: 2014-06-24 00:00
 Slug: [sort]_merge_sort
 Category: sort
 Author: Chris Yang

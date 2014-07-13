@@ -1,4 +1,6 @@
 Title: [linux] userdel: user xxx is currently logged in
+Date: 2014-06-12 00:00
+Modified: 2014-06-12 00:00
 Slug: [linux]_userdel_xxx_is_currently_logged_in
 Category: linux
 Author: Chris Yang

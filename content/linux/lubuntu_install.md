@@ -1,4 +1,6 @@
 Title: [linux] 安裝 lubuntu 13.10
+Date: 2014-06-09 00:00
+Modified: 2014-06-09 00:00
 Slug: [linux]_lubuntu_install
 Category: linux
 Author: Chris Yang

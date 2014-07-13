@@ -1,4 +1,6 @@
 Title: [linux] ubuntu 架設 ftp (使用vsftp)
+Date: 2014-06-11 00:00
+Modified: 2014-06-11 00:00
 Slug: [linux]_ftp_(vsftp)
 Category: linux
 Author: Chris Yang

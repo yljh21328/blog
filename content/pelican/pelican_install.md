@@ -1,4 +1,6 @@
 Title: [pelican] 安裝 Pelican
+Date: 2014-06-13 00:00
+Modified: 2014-06-13 00:00
 Slug: [pelican]_pelican_install
 Category: pelican
 Author: Chris Yang

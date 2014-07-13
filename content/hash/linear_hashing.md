@@ -1,4 +1,6 @@
 Title: [hash] linear hashing
+Date: 2014-06-03 00:00
+Modified: 2014-06-03 00:00
 Slug: [hash]_linear_hashing
 Category: hash
 Author: Chris Yang
