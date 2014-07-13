@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/vim.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-07-12T19:36:43+08:00</updated><entry><title>[vim] 安裝顏色模板 color scheme</title><link href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_color_scheme.html" rel="alternate"></link><updated>2014-07-12T19:36:43+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-12:blog/posts/2014/07/vim/[vim]_color_scheme.html</id><summary type="html">&lt;p&gt;預設的 vim 顏色很難看&lt;/p&gt;
-&lt;p&gt;利用 color scheme 可以讓 vim 長的好看一些&lt;/p&gt;
-&lt;p&gt;可以在 &lt;a href="http://cocopon.me/app/vim-color-gallery/" target="_blank"&gt; Vim Colorscheme Gallery&lt;/a&gt; 找一個適合自己的模板&lt;/p&gt;
-&lt;p&gt;我是用 jellybeans&lt;/p&gt;
-&lt;p&gt;安裝方式如下&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;下載&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;
-&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;colors&lt;/span&gt;
-&lt;span class="n"&gt;mv&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;colors&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;然後設定.vimrc&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vimrc&lt;/span&gt;
-
-&lt;span class="n"&gt;colorscheme&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="n"&gt;t_Co&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;256&lt;/span&gt;
-&lt;span class="n"&gt;syntax&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;參考來源：
-&lt;a href="http://blog.longwin.com.tw/2009/03/choose-vim-color-scheme-2009/" target="_blank"&gt;挑選 Vim 顏色(Color Scheme)&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[vim] vundle 套件管理</title><link href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_vundle_plugin.html" rel="alternate"></link><updated>2014-07-12T19:30:42+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-12:blog/posts/2014/07/vim/[vim]_vundle_plugin.html</id><summary type="html">&lt;p&gt;vundle 是一個 vim 的套件管理工具&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/vim.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-07-02T00:00:00+08:00</updated><entry><title>[vim] vundle 套件管理</title><link href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_vundle_plugin.html" rel="alternate"></link><updated>2014-07-02T00:00:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-02:blog/posts/2014/07/vim/[vim]_vundle_plugin.html</id><summary type="html">&lt;p&gt;vundle 是一個 vim 的套件管理工具&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;就可以輕鬆的安裝 Vundle 了&lt;/p&gt;
 &lt;p&gt;然後再在 .vimrc 中設定即可&lt;/p&gt;
@@ -41,4 +20,25 @@
 &lt;p&gt;即可安裝完成&lt;/p&gt;
 &lt;p&gt;參考來源：&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/gmarik/Vundle.vim" target="_blank"&gt;Vundle.vim&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://vimawesome.com/" target="_blank"&gt;VimAwesome&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;&lt;a href="http://vimawesome.com/" target="_blank"&gt;VimAwesome&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[vim] 安裝顏色模板 color scheme</title><link href="http://yljh21328.github.io/blog/posts/2014/07/vim/[vim]_color_scheme.html" rel="alternate"></link><updated>2014-07-01T00:00:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-01:blog/posts/2014/07/vim/[vim]_color_scheme.html</id><summary type="html">&lt;p&gt;預設的 vim 顏色很難看&lt;/p&gt;
+&lt;p&gt;利用 color scheme 可以讓 vim 長的好看一些&lt;/p&gt;
+&lt;p&gt;可以在 &lt;a href="http://cocopon.me/app/vim-color-gallery/" target="_blank"&gt; Vim Colorscheme Gallery&lt;/a&gt; 找一個適合自己的模板&lt;/p&gt;
+&lt;p&gt;我是用 jellybeans&lt;/p&gt;
+&lt;p&gt;安裝方式如下&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;下載&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;
+&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;colors&lt;/span&gt;
+&lt;span class="n"&gt;mv&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;colors&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然後設定.vimrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vimrc&lt;/span&gt;
+
+&lt;span class="n"&gt;colorscheme&lt;/span&gt; &lt;span class="n"&gt;jellybeans&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="n"&gt;t_Co&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;256&lt;/span&gt;
+&lt;span class="n"&gt;syntax&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;參考來源：
+&lt;a href="http://blog.longwin.com.tw/2009/03/choose-vim-color-scheme-2009/" target="_blank"&gt;挑選 Vim 顏色(Color Scheme)&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/hash.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-07-12T19:22:46+08:00</updated><entry><title>[hash] linear hashing</title><link href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_linear_hashing.html" rel="alternate"></link><updated>2014-07-12T19:22:46+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-12:blog/posts/2014/07/hash/[hash]_linear_hashing.html</id><summary type="html">&lt;p&gt;linear hashing 是一種 &lt;font style="color:red;"&gt;dynamic hashing&lt;/font&gt; 的方法&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chris Yang | 學習筆記</title><link href="http://yljh21328.github.io/blog/" rel="alternate"></link><link href="http://yljh21328.github.io/blog/feeds/hash.atom.xml" rel="self"></link><id>http://yljh21328.github.io/blog/</id><updated>2014-06-05T00:00:00+08:00</updated><entry><title>[hash] rehashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_rehashing.html" rel="alternate"></link><updated>2014-06-05T00:00:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-06-05:blog/posts/2014/06/hash/[hash]_rehashing.html</id><summary type="html">&lt;p&gt;rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow&lt;/p&gt;
+&lt;p&gt;則再改用另外一種 hash function 來hash&lt;/p&gt;
+&lt;p&gt;而在此我們使用 &lt;font style="color:red;"&gt;linked list&lt;/font&gt; 來解決 collision 與 overflow 的問題&lt;/p&gt;
+&lt;p&gt;透過不斷的往後串即可&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank"&gt;rehashing – JAVA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而下面的範例是加上搜尋的功能&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank"&gt;rehashing with search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear probing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_probing.html" rel="alternate"></link><updated>2014-06-04T00:00:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-06-04:blog/posts/2014/06/hash/[hash]_linear_probing.html</id><summary type="html">&lt;p&gt;linear probing 是一種用來碰撞處理的策略&lt;/p&gt;
+&lt;p&gt;如果hash 過去的欄位已有值存在&lt;/p&gt;
+&lt;p&gt;則往後尋找直到遇到第一個空的欄位為止&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank"&gt;linear probing – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear hashing</title><link href="http://yljh21328.github.io/blog/posts/2014/06/hash/[hash]_linear_hashing.html" rel="alternate"></link><updated>2014-06-03T00:00:00+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-06-03:blog/posts/2014/06/hash/[hash]_linear_hashing.html</id><summary type="html">&lt;p&gt;linear hashing 是一種 &lt;font style="color:red;"&gt;dynamic hashing&lt;/font&gt; 的方法&lt;/p&gt;
 &lt;p&gt;其儲存的欄位分為兩種 primary page, overflow page&lt;/p&gt;
 &lt;p&gt;並設N 為初始的 bucket 數&lt;/p&gt;
 &lt;p&gt;h_level (key) = key mod [N * 2 ^ N]&lt;/p&gt;
@@ -38,13 +47,4 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank"&gt;詳細教學與範例&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] linear probing</title><link href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_linear_probing.html" rel="alternate"></link><updated>2014-07-12T19:22:46+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-12:blog/posts/2014/07/hash/[hash]_linear_probing.html</id><summary type="html">&lt;p&gt;linear probing 是一種用來碰撞處理的策略&lt;/p&gt;
-&lt;p&gt;如果hash 過去的欄位已有值存在&lt;/p&gt;
-&lt;p&gt;則往後尋找直到遇到第一個空的欄位為止&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/linear_probing/linear_probing.java" target="_blank"&gt;linear probing – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>[hash] rehashing</title><link href="http://yljh21328.github.io/blog/posts/2014/07/hash/[hash]_rehashing.html" rel="alternate"></link><updated>2014-07-12T19:22:46+08:00</updated><author><name>Chris Yang</name></author><id>tag:yljh21328.github.io,2014-07-12:blog/posts/2014/07/hash/[hash]_rehashing.html</id><summary type="html">&lt;p&gt;rehashing 的概念是在hash 的過程中如果遇到 collision 與 overflow&lt;/p&gt;
-&lt;p&gt;則再改用另外一種 hash function 來hash&lt;/p&gt;
-&lt;p&gt;而在此我們使用 &lt;font style="color:red;"&gt;linked list&lt;/font&gt; 來解決 collision 與 overflow 的問題&lt;/p&gt;
-&lt;p&gt;透過不斷的往後串即可&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing/rehashing.java" target="_blank"&gt;rehashing – JAVA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而下面的範例是加上搜尋的功能&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/yljh21328/code_example/blob/master/HASH/rehashing_search/rehashing_search.java" target="_blank"&gt;rehashing with search – JAVA&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;&lt;a href="http://yljh21328.github.io/blog/pdf/EDHashing.pdf" target="_blank"&gt;詳細教學與範例&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>
